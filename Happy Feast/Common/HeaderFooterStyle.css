@@ -1,0 +1,91 @@
+ /* Header Styles Start */
+ .header_wrapper{
+    width: 100%;
+    height: 125px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #ff9800c7 55%, yellow);
+    z-index: 10;
+  }
+  
+  .feast_logo{
+    width: 125px;
+    float: right;
+  }
+  
+  .ofo_txt{
+    position: absolute;
+    margin: 38px 0 0 7%;
+    font-size: 36px;
+    font-family: emoji;
+    color: maroon;
+  }
+  
+  .search_holder{
+    height: 40px;
+    width: 415px;
+    position: relative;
+    background-color: white;
+    margin: 37px 0 0 40%;
+    border-radius: 10px;
+    box-shadow: rgb(0,0,0,0.29) 2px 4px 5px;
+  
+  }
+  
+  .search_holder img{
+    width: 30px;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+  
+  }
+  
+  .search_holder input{
+    outline: none;
+    border: none;
+    width: 360px;
+    height: 33px;
+    position: absolute;
+    left: 48px;
+    top: 2px;
+  
+  }
+  
+  /* Header Styles End*/
+  /* Footer Styles Start */
+  footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-image: linear-gradient(to right, #ff9800c7 70%, yellow);
+    z-index: 10;
+  }
+  
+  .copyright_text{
+    position: absolute;
+    color: maroon;
+    opacity: 0.8;
+    font-size: 20px;
+    top: 10px;
+    left: 55px;
+    font-family: emoji;
+    font-weight: bold;
+  }
+  
+  .social_site_icons{
+    width: 100px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+  }
+  
+  .social_site_icons img{
+    width: 20px
+  }
+  
+  /* Footer Styles End */
+  
+  

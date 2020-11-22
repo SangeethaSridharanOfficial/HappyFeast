@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Happy Feast</title>
+    <link rel="stylesheet" href="LoginPageStyle.css" />
+    <link rel="stylesheet" href="../Common/HeaderFooterStyle.css" />
+    <link rel="fav icon" href="../Common/Images/favicon.png" />
+    <script>
+      const onLoginClick = () => {
+        if (
+          (document.getElementById("username").value === "user1" ||
+            "user2" ||
+            "user3") &&
+          document.getElementById("password").value === "pass123"
+        ) {
+          location.href = "../HomePage/HomePage.html";
+        } else {
+          clearCredentials();
+          alert("please enter valid credentials");
+        }
+      };
+      const clearCredentials = () => {
+        document.getElementById("username").value = "";
+        document.getElementById("password").value = "";
+      };
+    </script>
+  </head>
+  <body>
+    <header class="header_wrapper">
+      <img
+        alt="happyfeastLogo"
+        class="feast_logo"
+        src="../Common/Images/happyfeastlogod.webp"
+      />
+      <h1 class="ofo_txt">Happy Feast</h1>
+    </header>
+
+    <form class="form">
+      <div class="container">
+        <label><b>Username</b></label>
+        <input
+          type="text"
+          placeholder="Enter Username"
+          id="username"
+          required
+        />
+
+        <label><b>Password</b></label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          id="password"
+          required
+        />
+        <input
+          class="button"
+          type="button"
+          value="Login"
+          onClick="onLoginClick()"
+        />
+      </div>
+
+      <div class="container" style="background-color: #f1f1f1">
+        <input class="cancelbtn" type="button" value="Cancel" />
+      </div>
+    </form>
+    <footer>
+      <span class="copyright_text">Copyright &copy; 2020 HappyFeast</span>
+      <div class="social_site_icons">
+        <img alt="facebook" src="../Common/Images/facebook.png" />
+        <img alt="google" src="../Common/Images/google.png" />
+        <img alt="twitter" src="../Common/Images/twitter.png" />
+      </div>
+    </footer>
+  </body>
+</html>
