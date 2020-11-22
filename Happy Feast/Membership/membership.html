@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="membership.css" />
+</head>
+<body>    
+  <header>
+    <h1  style="background-color:Tomato;" >Membership Page<img src="image/a4.jpeg" class="heading" alt="" /></h1>
+</header> 
+
+<form action="action_page.php" style="border:1px solid #ccc">
+    <div class="container">
+      <h2 style="color:rgb(161, 11, 109)" >Welcome to Happy Feast</h2>
+      <p>Please fill this form to become our Member</p>
+      <hr>
+  
+      <label for="name"><b>Name</b></label>
+      <input type="text" placeholder="Enter your name" name="name" required>
+
+      <label for="number"><b>Contact Number</b></label>
+      <input type="text" placeholder="Provide your phone number" name="number" required>
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="Date of birth">Date of Birth:</label>
+  <input type="date" id="birthday" name="birthday">
+  <br/> <br/>
+  
+  <label for="Date of birth">Adress:</label>
+  <div class="col-75">    
+    <textarea id="subject" name="subject" placeholder="enter Adress" style="height:200px"></textarea>    
+  </div>   
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+  
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Conditions</a>.</p>
+  
+      <div class="clearfix">
+        <button type="button" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Submit</button>
+      </div>
+    </div>
+  </form>
+  <footer>
+    <p>Copyright &copy;Copyright@2020 Happy Feast <br/>
+    <a href="http://www.gmail.com">Contact us</a></p>
+</footer>
+  
+  </body>
