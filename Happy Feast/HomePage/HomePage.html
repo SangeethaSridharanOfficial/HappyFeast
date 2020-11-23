@@ -9,10 +9,10 @@
   <script>
     const redirect = (selectedOption) => {
       if (selectedOption === "ordermeals") {
-        // location.href = "";
+        location.href = "../sangeetha/pages/mealOrder.html";
       }
       if (selectedOption === "track") {
-        // location.href = "";
+        location.href = "../sangeetha/pages/orderTracking.html";
       }
       if (selectedOption === "tour") {
         // location.href = "";
@@ -39,7 +39,7 @@
   <main>
     <h1>Welcome, Greetings from Happy Feast!</h1>
     <div class="select-options">
-      <div class="orderfood">
+      <div class="orderfood" onclick="redirect('ordermeals')">
         <img class="foodimage" alt="food image" src="./Images/burger.gif" />
         <div class="ordertext">
           <h2>Hungry? Order delicous food online.</h2>
