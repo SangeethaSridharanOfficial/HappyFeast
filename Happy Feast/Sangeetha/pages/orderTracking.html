@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HappyFeast</title>
+        <link rel="stylesheet" href="../styles/mealOrder.css"/>
+        <link rel="stylesheet" href="../styles/orderTracking.css"/>
+        <link rel="stylesheet" href="../styles/helper.css">
+        <link rel="fav icon" href="../images/general/favicon.png">
+        <meta charset="UTF-8">
+        <meta name="description" content="Meal ordering page">
+        <meta name="keywords" content="Meal, Restaurants and searchBox">
+    </head>
+    <body>
+        <header class="header_wrapper">
+            <h1 class="ofo_txt">Order Food Online</h1>
+            <div class="search_holder" style="opacity: 0;">
+                <!-- <img alt="searchIcon" src="../images/general/search.png"/>
+                <input type="text" placeholder="Search for restaurant..."/> -->
+            </div>
+            <div class="header_img_holder"><img alt="happyfeastLogo" class="feast_logo" src="../images/general/happyfeastlogod.webp"></div>
+        </header>
+        <aside class="navigations">
+            <ul>
+                <li><a href="../../HomePage/HomePage.html">Home</a></li>
+                <li><a href="../../HomePage/HomePage.html">AboutUs</a></li>
+                <li><a href="./mealOrder.html">MealOrder</a></li>
+                <li><a href="./searchOrder.html">Search Order</a></li>
+                <li><a href="./orderTracking.html">Order tracking</a></li>
+                <li><a href="../../HomePage/HomePage.html">ContactUs</a></li>
+                <li><a href="../../Feedback/feedback.html">Feedback</a></li>
+                <li><a href="../../Review/review.html">Review and rating</a></li>
+                <li><a href="../../HomePage/HomePage.html">Discount</a></li>
+                <li><a href="../../HomePage/HomePage.html">Tour</a></li>
+                <li><a href="../../HomePage/HomePage.html">Filter</a></li>
+                <li><a href="../../HomePage/HomePage.html">Game</a></li>
+                <li><a href="../../Membership/membership.html">Membership</a></li>
+                <li><a href="../../CareerPage/CareerPage.html">Career</a></li>
+            </ul>
+        </aside>
+        <main>
+            <div class="order_tracking_container">
+                <div class="order_tracking_wrapper">
+                    <img alt="foodAccepted" src="../images/ordertracking/accepted.jpg" class="acceptedFood">
+                    <img alt="foodStarted" src="../images/ordertracking/orderStarted.jpg" class="startedFood">
+                    <img alt="deliveredFood" src="../images/ordertracking/delivered.jpg" class="deliveredFood">
+                </div>
+                <div class="order_tracking_text">
+                    <span class="fo_accept_txt">Order Accepted</span>
+                    <span class="fo_start_txt">Delivery Person Started</span>
+                    <span class="fo_deliver_txt">Order Delivered</span>
+                </div>
+                <div class="OrderDesc">
+                    <p>You have ordered the Pizza with 2 veggie Nugguts !!!!</p>
+                </div>
+            </div>
+            <div class="order_details">
+                <h1>You can provide your contact details for future use</h1>
+                <form id="contactInfo" method="GET" action="./successpage.html">
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        <div class="labels">
+                            <label>Your Email ID</label>
+                            <label>Your Phone Number</label>
+                            <label>Your permanent address</label>
+                        </div>
+                        <div class="inputs">
+                            <input type="email" name="email" id="emailId" autofocus required placeholder="Enter your email" />
+                            <input type="tel" name="tel" id="tele" required placeholder="Enter your phoneNo" />
+                            <textarea name="address" id="address" required placeholder="Enter your address" ></textarea>
+                        </div>
+                        
+                    </fieldset>
+                    <input type="submit" id="submit" value="submit" />
+                </form>
+            </div>
+        </main>
+        <footer>
+            <span class="copyright_text">Copyright &copy; 2020 HappyFeast</span>
+            <div class="social_site_icons">
+                <img alt="facebook" src="../images/general/facebook.png">
+                <img alt="google" src="../images/general/google.png">
+                <img alt="twitter" src="../images/general/twitter.png">
+            </div>
+        </footer>
+    </body>
+</html>

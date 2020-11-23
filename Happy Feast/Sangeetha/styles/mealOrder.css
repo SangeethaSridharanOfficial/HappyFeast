@@ -1,0 +1,208 @@
+body{
+    margin: 0;
+}
+
+/* Header Styles Start */
+.header_wrapper{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-image: linear-gradient(to right, #ff9800c7 55%, yellow);
+    z-index: 10;
+    display: grid;
+    grid-template-columns: 30% 55% 15%;
+    grid-template-rows: 125px;
+    justify-items: center;
+    align-items: center;
+}
+
+.feast_logo{
+    width: 125px;
+    float: right;
+}
+
+.ofo_txt{
+    font-size: 3vw;
+    font-family: emoji;
+    color: maroon;
+}
+
+.search_holder{
+    height: 40px;
+    width: 60%;
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgb(0,0,0,0.29) 2px 4px 5px;
+
+}
+
+.search_holder img{
+    width: 30px;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+
+}
+
+.search_holder input{
+    outline: none;
+    border: none;
+    width: 80%;
+    height: 33px;
+    position: absolute;
+    left: 48px;
+    top: 2px;
+
+}
+
+.header_img_holder{
+    justify-self: flex-end;
+}
+
+@media only screen and (min-width: 620px) and (max-width: 850px) {
+    .search_holder input{
+        width: 72%;
+    }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 620px) {
+    .search_holder input{
+        width: 65%;
+    }
+}
+
+
+/* Header Styles End*/
+
+/* Main Styles Start */
+.main_wrapper{
+    margin-left: 20%;
+    position: relative;
+    margin-top: 125px;
+    width: 80%;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 100px;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.rest_wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    margin-top: 1%;
+}
+
+.res_holder{
+    width: 390px;
+}
+
+.res_holder .img_holder{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.res_holder .img_holder img{
+    width: 100%;
+    height: 200px;
+
+}
+
+.rest_info_holder{
+    border: 2px solid orange;
+    border-radius: 10px;
+    position: relative;
+}
+
+.rest_info_holder .rest_name{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.rest_info_holder .rest_title{
+    font-size: 20px;
+    text-decoration: none;
+    color: orange;
+    font-family: emoji;
+    font-weight: bold;
+}
+
+.rest_info_holder .rest_desc{
+    font-size: 18px;
+    color: lightslategrey;
+    margin: 3px 20px;
+}
+
+.rest_info_holder .cost{
+    margin: 4px 20px;
+    display: block;
+    color: lightslategrey;
+}
+
+.rest_info_holder .payment{
+    margin: 4px 20px;
+    display: block;
+    color: lightslategrey;
+}
+
+.rest_info_holder .order_btn{
+    margin: 4px 20px;
+    color: white;
+    text-decoration: none;
+    background-color: orange;
+    width: 60px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    margin-left: 307px;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: orange 0px 0px 13px -2px;
+}
+
+@media only screen and (min-width: 450px) and (max-width: 850px) {
+    .rest_wrapper{
+        grid-template-columns: 1fr;
+    }
+}
+/* Main Styles End */
+
+/* Footer Styles Start */
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-image: linear-gradient(to right, #ff9800c7 70%, yellow);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+}
+
+.copyright_text{
+    color: maroon;
+    opacity: 0.8;
+    font-size: 2vw;
+    font-family: emoji;
+    font-weight: bold;
+}
+
+.social_site_icons{
+    width: 100px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+.social_site_icons img{
+    width: 20px
+}
+
+/* Footer Styles End */
