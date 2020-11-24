@@ -1,97 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Happy Feast</title>
+    <link rel="stylesheet" href="../Common/HeaderFooterStyle.css" />
+    <link rel="fav icon" href="../Common/Images/favicon.png" />
+    <link rel="stylesheet" href="HomePageStyle.css" />
+    <script>
+      const redirect = (selectedOption) => {
+        if (selectedOption === "ordermeals") {
+          location.href = "../sangeetha/pages/mealOrder.html";
+        }
+        if (selectedOption === "track") {
+          location.href = "../sangeetha/pages/orderTracking.html";
+        }
+        if (selectedOption === "tour") {
+          // location.href = "";
+        }
+        if (selectedOption === "careerguide") {
+          location.href = "../CareerPage/CareerPage.html";
+        }
+        if (selectedOption === "discount") {
+          //location.href="";
+        }
+      };
+    </script>
+  </head>
 
-<head>
-  <title>Happy Feast</title>
-  <link rel="stylesheet" href="../Common/HeaderFooterStyle.css" />
-  <link rel="fav icon" href="../Common/Images/favicon.png" />
-  <link rel="stylesheet" href="HomePageStyle.css" />
-  <script>
-    const redirect = (selectedOption) => {
-      if (selectedOption === "ordermeals") {
-        location.href = "../sangeetha/pages/mealOrder.html";
-      }
-      if (selectedOption === "track") {
-        location.href = "../sangeetha/pages/orderTracking.html";
-      }
-      if (selectedOption === "tour") {
-        // location.href = "";
-      }
-      if (selectedOption === "careerguide") {
-        location.href = "../CareerPage/CareerPage.html";
-      }
-      if (selectedOption === "discount") {
-        //location.href="";
-      }
-    };
-  </script>
-</head>
+  <body>
+    <header class="header_wrapper">
+      <img
+        alt="happyfeastLogo"
+        class="feast_logo"
+        src="../Common/Images/happyfeastlogod.webp"
+      />
+      <h1 class="ofo_txt">Home</h1>
+      <div class="search_holder">
+        <img alt="searchIcon" src="../Common/Images/search.png" />
+        <input type="text" placeholder="Search for restaurant..." />
+      </div>
+    </header>
+    <main>
+      <h1>Welcome, Greetings from Happy Feast!</h1>
+      <div class="select-options">
+        <div class="orderfood" onclick="redirect('ordermeals')">
+          <img class="foodimage" alt="food image" src="./Images/burger.gif" />
+          <div class="ordertext">
+            <h2>Hungry? Order delicous food online.</h2>
+          </div>
+        </div>
+        <div class="discount">
+          <div class="discounttext">
+            <h2>Know about today's special offers</h2>
+          </div>
+          <img
+            class="discount-image"
+            alt="discount image"
+            src="Images/disc2.jpg"
+          />
+        </div>
+        <div class="tour" onclick="redirect('tour')">
+          <img class="tour-image" alt="tour icon" src="./Images/guide.png" />
+          <div class="tour-text">
+            <h2>
+              Take a tour of our page and know how to access all the features
+            </h2>
+          </div>
+        </div>
+        <div class="track" onclick="redirect('track')">
+          <div class="trackordertext">
+            <h2>Track the status of your order</h2>
+          </div>
+          <img class="trackImage" alt="track icon" src="./Images/del2.gif" />
+        </div>
 
-<body>
-  <header class="header_wrapper">
-    <img alt="happyfeastLogo" class="feast_logo" src="../Common/Images/happyfeastlogod.webp" />
-    <h1 class="ofo_txt">Home</h1>
-    <div class="search_holder">
-      <img alt="searchIcon" src="../Common/Images/search.png" />
-      <input type="text" placeholder="Search for restaurant..." />
-    </div>
-  </header>
-  <main>
-    <h1>Welcome, Greetings from Happy Feast!</h1>
-    <div class="select-options">
-      <div class="orderfood" onclick="redirect('ordermeals')">
-        <img class="foodimage" alt="food image" src="./Images/burger.gif" />
-        <div class="ordertext">
-          <h2>Hungry? Order delicous food online.</h2>
+        <div class="career" onclick="redirect('careerguide')">
+          <img
+            class="careerImage"
+            alt="careerguide icon"
+            src="Images/car1.jpg"
+          />
+          <div class="careertext">
+            <h2>Various career oppurtunities in food industry</h2>
+          </div>
         </div>
+        <nav>
+          <div class="sidenav">
+            
+            <a href="../Sangeetha/pages/searchOrder.html">Search</a>
+            <a href="../Membership/membership.html">Get Membership</a>
+            <a href="../Review/review.html">Review and Rating</a>
+            <a href="#">Filter Options</a>
+            <a href="#">Games</a>
+            <a href="../Feedback/feedback.html">Feed Back</a>
+            <a href="#">About us</a>
+            <a href="#">Contact us</a>
+          </div>
+        </nav>
       </div>
-      <div class="discount">
-        <div class="discounttext">
-          <h2>Know about today's special offers</h2>
-        </div>
-        <img class="discount-image" alt="discount image" src="Images/disc2.jpg" />
+    </main>
+    <footer>
+      <span class="copyright_text">Copyright &copy; 2020 HappyFeast</span>
+      <div class="social_site_icons">
+        <img alt="facebook" src="../Common/Images/facebook.png" />
+        <img alt="google" src="../Common/Images/google.png" />
+        <img alt="twitter" src="../Common/Images/twitter.png" />
       </div>
-      <div class="tour" onclick="redirect('tour')">
-        <img class="tour-image" alt="tour icon" src="./Images/guide.png" />
-        <div class="tour-text">
-          <h2>
-            Take a tour of our page and know how to access all the features
-          </h2>
-        </div>
-      </div>
-      <div class="track" onclick="redirect('track')">
-        <div class="trackordertext">
-          <h2>Track the status of your order</h2>
-        </div>
-        <img class="trackImage" alt="track icon" src="./Images/del2.gif" />
-      </div>
-
-      <div class="career" onclick="redirect('careerguide')">
-        <img class="careerImage" alt="careerguide icon" src="Images/car1.jpg" />
-        <div class="careertext">
-          <h2>Various career oppurtunities in food industry</h2>
-        </div>
-      </div>
-      <div class="sidenav">
-        <a href="../Membership/membership.html">Get Membership</a>
-        <a href="../Review/review.html">Review and Rating</a>
-        <a href="#">Filter Options</a>
-        <a href="#">Games</a>
-        <a href="../Feedback/feedback.html">Feed Back</a>
-        <a href="#">About us</a>
-        <a href="#">Contact us</a>
-      </div>
-    </div>
-    <div></div>
-  </main>
-  <footer>
-    <span class="copyright_text">Copyright &copy; 2020 HappyFeast</span>
-    <div class="social_site_icons">
-      <img alt="facebook" src="../Common/Images/facebook.png" />
-      <img alt="google" src="../Common/Images/google.png" />
-      <img alt="twitter" src="../Common/Images/twitter.png" />
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>

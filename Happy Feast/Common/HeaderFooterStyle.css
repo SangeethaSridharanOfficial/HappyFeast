@@ -23,6 +23,7 @@
   }
   
   .search_holder{
+    opacity: 0;
     height: 40px;
     width: 415px;
     position: relative;

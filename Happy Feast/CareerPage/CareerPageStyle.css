@@ -6,7 +6,10 @@ main {
   right: 0;
   left: 10px;
 }
-a {
+body{
+  font-family: "Lato", sans-serif;
+}
+.info a {
   display: block;
   padding-bottom: 2px;
   padding-left: 10px;
@@ -19,4 +22,39 @@ a:hover{
 }
 nav{
   width: 14%;
+}
+.info{
+  left: 20%;
+  position: absolute;
+}
+.sidenav {
+  height: 72.5%;
+  padding-top: 8px;
+  width: 20%;
+  position: fixed;
+  z-index: 1;
+  top: 125px;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+
+
+@media only screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;height: 93.5%}
+  .sidenav a {font-size: 18px;}
 }

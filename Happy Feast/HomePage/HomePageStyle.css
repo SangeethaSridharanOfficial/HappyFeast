@@ -133,7 +133,7 @@ border-radius: 5px;
   
  
   
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
+  @media only screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;height: 93.5%}
     .sidenav a {font-size: 18px;}
   }
