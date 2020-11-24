@@ -1,0 +1,213 @@
+
+ /* General format */
+ 
+ body {
+    margin: 0;
+    font-size: 1vw;
+    color:maroon;
+   
+  }
+  .wrapper{width: 64%;  
+     margin:0 auto;
+     margin-top: 150px;
+     margin-left: 33%;
+     border:2px solid maroon;
+    box-shadow:1px 2px 10px 6px;
+    background-color:  #ffa51e5e;
+  }
+  
+  .floatleft{
+    float:left;
+  }
+  fieldset{
+    border-color: maroon;
+  }
+  main{
+    width: 100%;
+    margin-top: 15%;
+    margin-left: 0%;
+    font-family: sans-serif;
+    background-image: url(../images/backgrwaitress.jpg);
+    background-size: 70%;
+    background-repeat: no-repeat;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column; 
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+   
+  }
+  legend{
+    color:maroon;
+    font-size: 1.5em;
+    font-weight: bold;
+  
+  }
+  span{
+    color:orange;
+    font-size: .7em;
+    font-style: italic;
+   }
+   span:hover{
+     color:maroon;
+   
+    }
+  
+  .item {
+     list-style-type: none;
+    padding: 5px;
+    background-color:orange;
+    font-size: 1.3vw;
+  }
+  a {text-decoration: none; color: maroon;}
+  
+  ul li:hover{
+      background-color: #ffa51e5e;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;    
+      border:2px solid maroon;
+  }
+  /* General format */
+ /* Display for Portrait Phones*/
+  @media only screen and (max-width: 767px) {
+      
+main {
+    margin-top:30%;
+    margin-left: 5%;  
+  }
+      
+ form { 
+      width: 75%;  
+            
+        }
+ .search_holder input{
+   
+    top: 50px;
+    left: 0px;
+ }
+
+ .search_holder{
+    width: 100%;
+    margin: 130px 0 0 0%;
+      }
+    }
+/* End Display for Portrait Phones*/
+
+/* Display for screen larger than Portrait Phones*/
+
+@media only screen and (min-width: 768px) {
+    main {
+        margin-top:20%;
+        margin-left: 0%;  
+      }
+    
+    form {
+      
+        width: 60%;
+          
+    }
+    .search_holder input{
+        top: 5px;
+        left: 10px;
+       
+     }
+    
+     .search_holder{
+        width: 40%;
+        margin: 37px 0 0 40%;
+          }
+    
+    }
+    /* End Display for Portrait Phones*/
+    
+
+ 
+
+/* Header Styles Start */
+.header_wrapper{
+    width: 100%;
+    height: 125px;
+    position: fixed;
+    top: 0;
+    background-image: linear-gradient(to right, #ff9800c7 55%, yellow);
+    z-index: 10;
+}
+
+.feast_logo{
+    width: 125px;
+    float: right;
+}
+
+.ofo_txt{
+    position: absolute;
+    margin: 38px 0 0 7%;
+    font-size: 36px;
+    font-family: emoji;
+    color: maroon;
+}
+
+.search_holder{
+    height: 40px;
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgb(0,0,0,0.29) 2px 4px 5px;
+
+}
+
+.search_holder img{
+ width: 30px;
+    position: absolute;
+  }
+
+.search_holder input{
+    outline: none;
+    border: none;
+    width: 30%;
+    height: 33px;
+    position: absolute;
+    left: 48px;
+    top: 2px;
+
+}
+
+/* Header Styles End*/
+
+
+
+/* Footer Styles Start */
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-image: linear-gradient(to right, #ff9800c7 70%, yellow);
+    z-index: 10;
+}
+
+.copyright_text{
+    position: absolute;
+    color: maroon;
+    opacity: 0.8;
+    font-size: 20px;
+    top: 10px;
+    left: 55px;
+    font-family: emoji;
+    font-weight: bold;
+}
+
+.social_site_icons{
+    width: 100px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+.social_site_icons img{
+    width: 20px
+}
+
+/* Footer Styles End */
