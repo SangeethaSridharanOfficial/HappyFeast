@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- Contact Us Page for HappyFeast restaurant. -->
+   <html lang="en">
+    <head>
+        <title> HappyFeast | Contact Us</title>
+        <meta charset="utf-8" />
+          <!--
+        The Contact Us page displays a for which provides the avenue for clients  to contact HappyFeast. The page will remove the side menu bar when reached the mobile and 
+        tablet size, but shows the side menu bar when screen size is above 780px
+        --> 
+        <!--Information created in this area is mainly to provide information the the browser and not 
+            necessarily for the audience. The title however will be shown in the title bar of the browser,
+            therefore, it will be visible to persons.The icon also will be displayed-->
+        <link rel="stylesheet" href="../styles/ContactUs.css"/>
+        <link rel="stylesheet" href="../styles/helper.css"/>
+        <link rel="fav icon" href="../images/general/favicon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="This page provides a form and information for persons to contact the restaurant" />
+        <meta name="keyword" content="Restaurant, coffee, snack, food, tea shop, dining, drink" />
+    </head>
+    <body>
+        <header class="header_wrapper">
+            <img alt="happyfeastLogo" class="feast_logo" src="../images/general/happyfeastlogod.webp">
+            <h1 class="ofo_txt">Contact Us</h1>
+            <div class="search_holder">
+                <img alt="searchIcon" src="../images/general/search.png"/>
+                <input type="text" placeholder="Search for restaurant..."/>
+            </div>
+        </header>
+        <div id="side">
+         <aside>
+            <ul>
+                <li><a href="../../HomePage/HomePage.html">Home</a></li>
+                <li><a href="../../AboutUs/pages/AboutUs.html">AboutUs</a></li>
+                <li><a href="../../Sangeetha/pages/mealOrder.html">MealOrder and Search</a></li>
+                <li><a href="../../Sangeetha/pages/orderTracking.html">Order tracking</a></li>
+                <li><a href="../../ContactUs/pages/ContactUs.html">ContactUs</a></li>
+                <li><a href="../../Feedback/feedback.html">Feedback</a></li>
+                <li><a href="../../Review/review.html">Review and rating</a></li>
+                <li><a href="../../HomePage/HomePage.html">Discount</a></li>
+                <li><a href="../../Tour/pages/Tour.html">Tour</a></li>
+                <li><a href="../../HomePage/HomePage.html">Filter</a></li>
+                <li><a href="../../HomePage/HomePage.html">Game</a></li>
+                <li><a href="../../Membership/membership.html">Membership</a></li>
+                <li><a href="../../CareerPage/CareerPage.html">"Career</a></li>
+            </ul>
+        </aside>
+    </div>
+            <main>
+              <form  >
+                    <fieldset><legend><b>Have a question or comment?</b></legend><p><em> You're in the right place!!</em>
+                    Please complete and submit the form below and we will get in touch with you as soon as possible.</p>
+                    <label for="Fname" >First Name</label> <br/>
+                    <input type="text" id="Fname" name="FName" > <br/>
+                    <label for= "Lname"> Last Name</label> <br/>
+                    <input type="text" id="Lname" name="LName"><br/>
+                    <label for="PhoneNum">Phone Number</label><br/>
+                    <input type="text" id="PhoneNum" name="PhoneNum"><br/>
+                    <label for="EmailAdd">Email Address</label><br/>
+                    <input type="text" id="EmailAdd" name="EmailAdd"><br/><br/>
+                    <label>Please enter your question or comment below:</label>
+                    <textarea id="comment" name="comment"> </textarea><br/><br/>
+                    <input type="submit" value="Send" class=sendButton>
+                    </fieldset>
+                </form>
+            </main>
+          <footer>
+            <span class="copyright_text">Copyright &copy; 2020 HappyFeast</span>
+            <div class="social_site_icons">
+                <img alt="facebook" src="../images/general/facebook.png">
+                <img alt="google" src="../images/general/google.png">
+                <img alt="twitter" src="../images/general/twitter.png">
+            </div>
+        </footer>
+    </body>
+</html>

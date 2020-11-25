@@ -1,0 +1,183 @@
+/*General sections body*/
+
+body{
+    margin: 0;
+}
+
+/*main*/
+main {
+    top: 15%;
+    margin-left: 40%;
+    font-family: sans-serif;
+    
+  }
+  
+ /* Header Styles Start */
+.header_wrapper{
+    width: 100%;
+    height: 19%;
+    position: fixed;
+    top: 0;
+    background-image: linear-gradient(to right, #ff9800c7 55%, yellow);
+    z-index: 10;
+}
+
+.feast_logo{
+    width: 125px;
+    height:100%;
+    float: right;
+}
+
+.ofo_txt{
+    position: absolute;
+    margin: 38px 0 0 7%;
+    font-size: 36px;
+    font-family: emoji;
+    color: maroon;
+}
+
+.search_holder{
+    height: 40px;
+    width: 415px;
+    position: relative;
+    background-color: white;
+    margin: 37px 0 0 40%;
+    border-radius: 10px;
+    box-shadow: rgb(0,0,0,0.29) 2px 4px 5px;
+
+}
+
+.search_holder img{
+    width: 30px;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+
+}
+
+.search_holder input{
+    outline: none;
+    border: none;
+    width: 360px;
+    height: 33px;
+    position: absolute;
+    left: 48px;
+    top: 2px;
+
+}
+
+/* Header Styles End*/
+
+
+
+/* media for tablet and laptop and Above/* Main Styles Start */
+
+@media only screen and (min-width: 768px){
+  
+.aboutuswrapper{
+   
+   width:100%;
+   margin-top:9%;
+   margin-bottom: 5em;
+   margin-left:0%;
+   float: right;
+   position: relative;
+}
+
+p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: justify;
+    margin-left: 25%;
+ }
+
+h2{font-size: 150%;padding-bottom:.2em;margin-left: 25%;}
+    
+main img{
+    float:right; 
+    padding-left:2em;
+    padding-right:1em;
+    padding-bottom:1em;
+    max-width:70%;
+    }
+
+}
+ /* About Us Section for tablets and laptop*/
+  
+/* About Us Section*//*For mobile devices and tablets */
+
+@media only screen and (max-width: 767px) {
+ 
+.aboutuswrapper{
+    border:2px ;  
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 35%;
+       }
+
+.search_holder input{
+    top: 7px;
+    left: 50px;
+}
+    
+.search_holder{
+    width: 100%;
+    margin: 130px 0 0 0%;
+}
+p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande','Lucida Sans', Arial, sans-serif;
+    padding-bottom:2%;
+    color: brown;
+    font-size: 90%;
+    text-align: justify;
+}
+           
+h2{
+    padding-top:1em;
+    font-size: 140%;
+    padding-bottom:.5em;
+    text-align: center;
+    color:maroon
+}
+               
+main img{
+    width:100%;
+    max-width:100%;
+}
+
+}
+
+/* Main Styles End */
+
+/* Footer Styles Start */
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 6.1%;
+    background-image: linear-gradient(to right, #ff9800c7 70%, yellow);
+    z-index: 10;
+}
+
+.copyright_text{
+    position: absolute;
+    color: maroon;
+    opacity: 0.8;
+    font-size: 20px;
+    top: 10px;
+    left: 55px;
+    font-family: emoji;
+    font-weight: bold;
+}
+
+.social_site_icons{
+    width: 100px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+.social_site_icons img{
+    width: 20px
+}
+
+/* Footer Styles End */
