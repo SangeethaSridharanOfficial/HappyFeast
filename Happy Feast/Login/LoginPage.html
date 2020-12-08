@@ -5,11 +5,15 @@
     <link rel="stylesheet" href="LoginPageStyle.css" />
     <link rel="stylesheet" href="../Common/HeaderFooterStyle.css" />
     <link rel="fav icon" href="../Common/Images/favicon.png" />
-    <meta charset="UTF-8">
-    <meta name="description" content="Login page">
-    <meta name="keywords" content="Login">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="description" content="Login page" />
+    <meta name="keywords" content="Login" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script>
+      var isErrorPassword = false;
+      const validation = () => {
+        document.getElementById("error-password").innerHTML = "";
+      };
       const onLoginClick = () => {
         if (
           (document.getElementById("username").value === "user1" ||
@@ -17,10 +21,15 @@
             "user3") &&
           document.getElementById("password").value === "pass123"
         ) {
+          localStorage.setItem(
+            "uname",
+            `${document.getElementById("username").value}`
+          );
           location.href = "../HomePage/HomePage.html";
         } else {
+          document.getElementById("error-password").innerHTML =
+            "incorrect username or password";
           clearCredentials();
-          alert("please enter valid credentials");
         }
       };
       const clearCredentials = () => {
@@ -47,22 +56,24 @@
           placeholder="Enter Username"
           id="username"
           required
+          oninput="validation()"
         />
-
         <label><b>Password</b></label>
         <input
           type="password"
           placeholder="Enter Password"
           id="password"
           required
+          oninput="validation()"
         />
+        <div id="error-password"></div>
         <input
           class="button"
           type="button"
           value="Login"
           onClick="onLoginClick()"
         />
-      </div>      
+      </div>
       <div class="container" style="background-color: #f1f1f1">
         <input class="cancelbtn" type="button" value="Cancel" />
       </div>

@@ -5,11 +5,20 @@
     <link rel="stylesheet" href="../Common/HeaderFooterStyle.css" />
     <link rel="fav icon" href="../Common/Images/favicon.png" />
     <link rel="stylesheet" href="HomePageStyle.css" />
-    <meta charset="UTF-8">
-    <meta name="description" content="Home page">
-    <meta name="keywords" content="Meal, Restaurants,tour,seacrh,food,career guide,trackorder">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="description" content="Home page" />
+    <meta
+      name="keywords"
+      content="Meal, Restaurants,tour,seacrh,food,career guide,trackorder"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script>
+      var uname = localStorage.getItem("uname");
+
+      window.onload = function () {
+        document.getElementById("welcome").innerHTML = `Welcome ${uname}`;
+      };
+
       const redirect = (selectedOption) => {
         if (selectedOption === "ordermeals") {
           location.href = "../sangeetha/pages/mealOrder.html";
@@ -18,7 +27,7 @@
           location.href = "../sangeetha/pages/orderTracking.html";
         }
         if (selectedOption === "tour") {
-          location.href ="../Tour/pages/tour.html";
+          location.href = "../Tour/pages/tour.html";
         }
         if (selectedOption === "careerguide") {
           location.href = "../CareerPage/CareerPage.html";
@@ -44,7 +53,7 @@
       </div>
     </header>
     <main>
-      <h1>Welcome, Greetings from Happy Feast!</h1>
+      <h1 id="welcome"></h1>
       <div class="select-options">
         <div class="orderfood" onclick="redirect('ordermeals')">
           <img class="foodimage" alt="food image" src="./Images/burger.gif" />
@@ -89,7 +98,6 @@
         </div>
         <nav>
           <div class="sidenav">
-            
             <a href="../Sangeetha/pages/searchOrder.html">Search</a>
             <a href="../Membership/membership.html">Get Membership</a>
             <a href="../Review/review.html">Review and Rating</a>
@@ -98,6 +106,7 @@
             <a href="../Feedback/feedback.html">Feed Back</a>
             <a href="../AboutUs/pages/AboutUs.html">About us</a>
             <a href="../ContactUs/pages/ContactUs.html">Contact us</a>
+            <a href="../Logout/Logout.html">Log out</a>
           </div>
         </nav>
       </div>

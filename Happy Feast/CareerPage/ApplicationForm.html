@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Happy Feast</title>
+    <link rel="stylesheet" href="ApplicationForm.css" />
+    <link rel="stylesheet" href="../Common/HeaderFooterStyle.css"/>
+    <script></script>
+  </head>
+  <body>
+    <header class="header_wrapper">
+        <img
+          alt="happyfeastLogo"
+          class="feast_logo"
+          src="../Common/Images/happyfeastlogod.webp"
+        />
+        <h1 class="ofo_txt">Job Application</h1>
+        <div class="search_holder">
+          <img alt="searchIcon" src="../Common/Images/search.png" />
+          <input type="text" placeholder="Search for restaurant..." />
+        </div>
+      </header>
+    <div class="testbox">
+      <form action="/">
+        <!-- <div class="banner">
+          <h1>Job Application Form</h1>
+        </div> -->
+        <p class="top-info">
+          Thank you for your interest in working with us. Please check below for
+          available job opportunities that meet your criteria and send your
+          application by filling out the Job Application Form.
+        </p>
+        <div class="item">
+          <p>Name<span class="required">*</span></p>
+          <div class="name-item">
+            <input type="text" name="name" placeholder="First" required />
+            <input type="text" name="name" placeholder="Last" required />
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="item">
+            <p>Email<span class="required">*</span></p>
+            <input type="text" name="name" required />
+          </div>
+          <div class="item">
+            <p>Phone<span class="required">*</span></p>
+            <input type="text" name="name" required />
+          </div>
+        </div>
+        <div class="position-item">
+          <div class="item">
+            <p>
+              What position are you applying for?<span class="required">*</span>
+            </p>
+            <select required>
+              <option value="1">Kitchen Manager</option>
+              <option value="2">Chef Assistant</option>
+              <option value="3">Bartender</option>
+              <option value="4">Server</option>
+              <option value="5">Cashier</option>
+            </select>
+          </div>
+          <div class="item">
+            <p>Available start date<span class="required">*</span></p>
+            <input type="date" name="bdate" required />
+            <i class="fas fa-calendar-alt"></i>
+          </div>
+        </div>
+        <div class="question">
+          <p>
+            What is your current employment status?<span class="required"
+              >*</span
+            >
+          </p>
+          <div class="question-answer">
+            <div>
+              <input
+                type="radio"
+                value="none"
+                id="radio_1"
+                name="status"
+                required
+              />
+              <label for="radio_1" class="radio"><span>Employed</span></label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                value="none"
+                id="radio_2"
+                name="status"
+                required
+              />
+              <label for="radio_2" class="radio"
+                ><span>Self-Employed</span></label
+              >
+            </div>
+            <div>
+              <input
+                type="radio"
+                value="none"
+                id="radio_3"
+                name="status"
+                required
+              />
+              <label for="radio_3" class="radio"><span>Unemployed</span></label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                value="none"
+                id="radio_4"
+                name="status"
+                required
+              />
+              <label for="radio_4" class="radio"><span>Student</span></label>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <p>Submit your resume by providing your resume URL or attach file:</p>
+          <input type="text" name="providing" />
+          <input type="file" name="file" accept="file/*" />
+        </div>
+        <div class="question">
+          <p>Would you like to list references</p>
+          <div class="question-answer">
+            <div>
+              <input type="radio" value="none" id="radio_5" name="references" />
+              <label for="radio_5" class="radio"><span>Yes</span></label>
+            </div>
+            <div>
+              <input type="radio" value="none" id="radio_6" name="references" />
+              <label for="radio_6" class="radio"><span>No</span></label>
+            </div>
+          </div>
+        </div>
+        <div class="btn-block">
+          <button type="submit" href="/">Apply For The Job</button>
+        </div>
+      </form>
+    </div>
+    <footer>
+        <span class="copyright_text">Copyright &copy; 2020 HappyFeast</span>
+        <div class="social_site_icons">
+          <img alt="facebook" src="../Common/Images/facebook.png" />
+          <img alt="google" src="../Common/Images/google.png" />
+          <img alt="twitter" src="../Common/Images/twitter.png" />
+        </div>
+      </footer>
+  </body>
+</html>
