@@ -1,0 +1,73 @@
+<!Doctype html>
+<html>
+    <head>
+        <style>
+            body {
+              background-image: url('new11.jpg');
+            }
+            </style>
+        <link rel="stylesheet" href="main.css">
+    </head>
+<body>
+    <div>
+        <h1>DISCOUNT CALCULATOR</h1>
+        <P>Please initial price </P>
+    <input id="price">
+    <br><br>
+    
+    <button onclick="getPrice()">
+
+        Get total
+</button>
+    <br><br>
+    <input readonly id="total">
+    <script>
+        getPrice = function() {
+            var numVal1 = Number(document.getElementById("price").value);
+            
+            if ( numVal1 <= 100) {
+
+                discount = 3
+            
+          } else if (numVal1 > 100 && numVal1 <=200) {
+                discount = 5
+           } else {
+                
+                discount = 8
+  
+}
+
+            var numVal2 = numVal1*discount / 100;
+
+            var totalValue = numVal1 - numVal2
+           
+            var taxamount = (totalValue*13)/100
+            var aftertax = totalValue+taxamount
+            document.getElementById("total").value =aftertax.toFixed(2) ;
+               
+               document.writeln("Invoice : " + "<br><br>") ;
+               document.writeln("Initial Charge : " + numVal1 + "<br><br>") ;
+               document.writeln("Discount Amount : " + numVal2+ "<br><br>") ;
+               document.writeln("Tax Amount(after discount) : " + taxamount + "<br><br>") ;
+               document.writeln("Total Price : " + aftertax+ "<br><br>") ;
+
+
+        }
+        
+    </script>
+
+          <div id="explanation">
+            <h2>Discount Calculation</h2>
+         <p>If your initial price is equal or less than 100 cad</p>
+         <p>discount : 3 %</p>
+         <p>If your initial price is between 100 cad and 200 cad or equal to 200 cad </p>
+         <p>discount : 5 %</p>
+         <p>If your initial price is greater than 200 cad</p>
+         <p>discount : 8 %</p>
+         <p>Tax is 13% and will be added after your discount</p>
+                  </div>
+
+
+      </div>      
+</body>
+</html>

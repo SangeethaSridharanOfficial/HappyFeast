@@ -1,0 +1,59 @@
+body  {
+    background-color: rgb(238, 197, 135);
+    
+  }
+
+  .filterDiv {
+    float: left;
+    background-color: #048cfc;
+    color: #ffffff;
+    width: 150px;
+    line-height: 30px;
+    text-align: center;
+    margin: 2px;
+    display: none;
+  }
+  
+  .show {
+    display: block;
+  }
+  
+  .container {
+    margin-top: 50px;
+    overflow: hidden;
+   
+  }
+  
+  
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .btn:hover {
+    background-color: rgb(108, 125, 201);
+  }
+  
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }
+
+  div {
+
+    background-color:whitesmoke;
+    margin: auto;
+    width: 750px;
+    text-align: center;
+    border: 1px solid black ;
+    border-radius: 25px;
+  }
+
+  h1 {
+      color: red;
+      margin-top: 100px;
+  }
