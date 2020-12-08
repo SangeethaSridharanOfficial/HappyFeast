@@ -1,139 +1,143 @@
-h1{
-    margin: 0px;
-    padding-top: 8px;
+h1 {
+  margin: 0px;
+  padding-top: 8px;
 }
 body {
-    font-family: "Lato", sans-serif;
-  }
-main {
-    position: absolute;
-    top: 125px;
-    left: 20.25%;
-    height: 73.5%;
-    width: 79.75%;
-    overflow: auto;
+  font-family: "Lato", sans-serif;
 }
-.select-options{
-    position: relative;
-    
+main {
+  position: absolute;
+  top: 125px;
+  left: 20.25%;
+  height: 73.5%;
+  width: 79.75%;
+  overflow: auto;
+}
+.select-options {
+  position: relative;
 }
 nav {
   display: flex;
 }
 
-.orderfood:hover, .discount:hover ,.tour:hover,.track:hover,.career:hover{
+.orderfood:hover,
+.discount:hover,
+.tour:hover,
+.track:hover,
+.career:hover {
   box-shadow: 8px 8px 16px 8px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
 .container {
   padding: 2px 16px;
 }
-.orderfood{
-    display: flex;
-    position: relative;
-    border: 1px solid grey;
-    border-radius: 5px;
-    top: 1em;
-    background-color: #f1f5f7;
+.orderfood {
+  display: flex;
+  position: relative;
+  border: 1px solid grey;
+  border-radius: 5px;
+  top: 1em;
+  background-color: #f1f5f7;
 }
-.foodimage{
-border-radius: 5px;
+.foodimage {
+  border-radius: 5px;
 }
-.ordertext{
-    width: 100%;
-    align-self: center;
-    padding-left: 27px;
-    text-align: center;
+.ordertext {
+  width: 100%;
+  align-self: center;
+  padding-left: 27px;
+  text-align: center;
 }
-.discount{
-    display: flex;
-    position: relative;
-    top: 1.25em;
-    border: 1px solid grey;
-    border-radius: 5px;
+.discount {
+  display: flex;
+  position: relative;
+  top: 1.25em;
+  border: 1px solid grey;
+  border-radius: 5px;
 }
-.discount-image{
-border-radius: 5px;
+.discount-image {
+  border-radius: 5px;
 }
-.discounttext{
-    width: 100%;
-    text-align: center;
-    align-self: center;
+.discounttext {
+  width: 100%;
+  text-align: center;
+  align-self: center;
 }
-.tour{
-    display: flex;
-    position: relative;
-    top: 1.5em;
-    border: 1px solid grey;
-    border-radius: 5px;
-    background-color: #f1f5f7;
+.tour {
+  display: flex;
+  position: relative;
+  top: 1.5em;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: #f1f5f7;
 }
-.tour-text{
-    width: 100%;
-    align-self: center;
-    text-align: center;
+.tour-text {
+  width: 100%;
+  align-self: center;
+  text-align: center;
 }
-.track{
-    display: flex;
-    position: relative;
-    top: 1.75em;
-    border: 1px solid grey;
-    border-radius: 5px;
+.track {
+  display: flex;
+  position: relative;
+  top: 1.75em;
+  border: 1px solid grey;
+  border-radius: 5px;
 }
-.trackordertext{
-    width: 100%;
-    align-self: center;
-    text-align: center;
+.trackordertext {
+  width: 100%;
+  align-self: center;
+  text-align: center;
 }
-.trackImage{
-    border-radius: 5px;
+.trackImage {
+  border-radius: 5px;
 }
-.career{
-    display: flex;
-    position: relative;
-    top: 2em;
-    border: 1px solid grey;
-    border-radius: 5px;
-    background-color: #f1f5f7;
+.career {
+  display: flex;
+  position: relative;
+  top: 2em;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: #f1f5f7;
 }
-.careertext{
-    width: 100%;
-    align-self: center;
-    text-align: center;
+.careertext {
+  width: 100%;
+  align-self: center;
+  text-align: center;
 }
-.careerImage{
-    border-radius: 5px;
+.careerImage {
+  border-radius: 5px;
 }
 
-  
+.sidenav {
+  height: 72.5%;
+  padding-top: 8px;
+  width: 20%;
+  position: fixed;
+  z-index: 1;
+  top: 125px;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+@media only screen and (max-height: 450px) {
   .sidenav {
-    height: 72.5%;
-    padding-top: 8px;
-    width: 20%;
-    position: fixed;
-    z-index: 1;
-    top: 125px;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    
+    padding-top: 15px;
+    height: 93.5%;
   }
-  
   .sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
+    font-size: 18px;
   }
-  
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-  
- 
-  
-  @media only screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;height: 93.5%}
-    .sidenav a {font-size: 18px;}
-  }
+}
