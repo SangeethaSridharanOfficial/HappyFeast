@@ -64,13 +64,14 @@
                             <label>Your permanent address</label>
                         </div>
                         <div class="inputs">
-                            <input type="email" name="email" id="emailId" autofocus required placeholder="Enter your email" />
-                            <input type="tel" name="tel" id="tele" required placeholder="Enter your phoneNo" />
-                            <textarea name="address" id="address" required placeholder="Enter your address" ></textarea>
+                            <input type="email" name="email" id="emailId" autofocus required placeholder="Enter your email" onkeyup="formVerification(true)" />
+                            <input type="tel" name="tel" id="tele" required placeholder="Enter your phoneNo" onkeyup="formVerification(true)" />
+                            <textarea name="address" id="address" required placeholder="Enter your address" onkeyup="formVerification(true)" ></textarea>
                         </div>
                         
                     </fieldset>
-                    <input type="submit" id="submit" value="submit" />
+                    <span style="display: none;" id="validationMessage"></span>
+                    <input type="submit" id="submit" value="submit"/>
                 </form>
             </div>
         </main>
@@ -82,5 +83,6 @@
                 <img alt="twitter" src="../images/general/twitter.png">
             </div>
         </footer>
+        <script src="../js/order.js"></script>
     </body>
 </html>
