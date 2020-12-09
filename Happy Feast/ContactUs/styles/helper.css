@@ -1,38 +1,35 @@
-/* Navigation bar*/
- #side{
-   margin:auto;
-   border:2px solid white;
-   margin-top:-2%}
-
+/*Side menu style*/
 aside{
     position: fixed;
     width: 20%;
+    height: calc(100% - 165px);
+    margin-top: 125px;
     background-image: linear-gradient(270deg, #ffe12bad, #ffc676);
     overflow-y: auto;
-    height:auto;
+    margin-bottom: 100px;
 }
 
 aside ul{
     list-style-type: none;
-    margin: 1em 0 0 0;
+    margin: 20px 0 0 0;
     padding: 0;
 
 }
 
+aside ul li a{
+  text-decoration: none;
+  color: black;
+}
+
 aside ul li{
-    margin-bottom:.5em; 
-    padding-left: 1em;
-    height:2.5em; 
+    margin-bottom: 4px;
+    padding-left: 15px;
+    height: 40px;
     display: flex;
     align-items: center;
-    font-size: 1.5vw;
 }
 
-aside ul li a{
-text-decoration: none;
-color: black;
 
-}
 
 aside ul li:hover{
     background-color: #ffa51e5e;
@@ -41,8 +38,6 @@ aside ul li:hover{
     cursor: pointer;
     font-size: 1.5vw;
 }
-
-
 
 ::-webkit-scrollbar {
     width: 7px;
@@ -62,23 +57,3 @@ aside ul li:hover{
   ::-webkit-scrollbar-thumb:hover {
     background: #ffc676; 
   }
-  /* */
-  @media only screen and (max-width: 767px){
-    aside{display:none;}
-  }
-
-  @media only screen and (min-width: 768px)  {
-    aside{height:90%;
-
-      margin-top: 17%; border: 2px;
-      }
-    }
-
-    @media only screen and (min-width: 960px)  {
-      aside{height:90%;
-  
-        margin-top: 10%; border: 2px;
-        }
-      }
-
- 

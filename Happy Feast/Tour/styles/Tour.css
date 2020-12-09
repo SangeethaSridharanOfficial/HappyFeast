@@ -7,13 +7,49 @@
     color:maroon;
    
   }
-  .wrapper{width: 64%;  
+
+  .disformat{
+    width: 100%;  
+    margin:0 auto;
+    margin-top: 30%;
+    margin-left: 70%;
+    border:2px solid maroon;
+   box-shadow:1px 2px 10px 6px;
+   background-color:  #ffa51e5e;
+   
+  }
+
+  #display{
+
+   /* width: 20%;  
+    margin:0 auto;*/
+    margin-top: 15px;
+    margin-left: 5%;
+   /* border:2px solid maroon;
+   box-shadow:1px 2px 10px 6px;
+   background-color:  #ffa51e5e;*/
+   float: left;
+   position:absolute;
+   }
+   #display img {
+
+    height:300px;
+    width:400px;
+   }
+   
+   #display p{
+    padding-left: .2em;
+    width:400px;
+   }
+   
+  .wrapper{width: 40%;  
      margin:0 auto;
      margin-top: 150px;
-     margin-left: 33%;
+     margin-left: 56%;
      border:2px solid maroon;
     box-shadow:1px 2px 10px 6px;
     background-color:  #ffa51e5e;
+   
   }
   
   .floatleft{
@@ -30,6 +66,7 @@
     background-image: url(../images/backgrwaitress.jpg);
     background-size: 70%;
     background-repeat: no-repeat;
+    padding-bottom: 5%;
   }
   
   .container {
@@ -37,6 +74,7 @@
     flex-direction: column; 
     flex-wrap: wrap;
     justify-content: space-evenly;
+    
    
   }
   legend{
@@ -56,7 +94,7 @@
     }
   
   .item {
-     list-style-type: none;
+    list-style-type: none;
     padding: 5px;
     background-color:orange;
     font-size: 1.3vw;
@@ -75,14 +113,32 @@
   @media only screen and (max-width: 767px) {
       
 main {
-    margin-top:30%;
+  
+    margin-top:45%;
     margin-left: 5%;  
+    width:90%;
+    background-image:none;
   }
-      
- form { 
-      width: 75%;  
-            
-        }
+       
+  legend{
+    
+    font-size: 300%;
+    
+  
+  }
+
+  ul{
+    
+    padding-left:0%;
+
+  }
+
+  ul li:hover{
+    background-color:orange;
+    border:none;
+}
+
+ 
  .search_holder input{
    
     top: 50px;
@@ -93,6 +149,51 @@ main {
     width: 100%;
     margin: 130px 0 0 0%;
       }
+      
+  span{
+    display:none;
+  }
+
+  .wrapper{
+    width: 100%;  
+    margin:0 auto;
+        /*
+       
+         border:2px solid maroon;
+        box-shadow:1px 2px 10px 6px;
+        background-color:  #ffa51e5e;*/
+    margin-left: 1%;
+    margin-top: 35%;
+
+       
+      }
+
+      .disformat{
+        width: 60%;  
+      /*  margin:0 auto;
+       
+        margin-left: 70%;
+        border:2px solid maroon;
+       box-shadow:1px 2px 10px 6px;
+       background-color:  #ffa51e5e;*/
+       margin-top: 20%;
+       margin-left: 25%;
+       position:fixed;
+      
+       
+      }
+      #display p{
+        padding-left: .4em;
+        width:250px;
+       }
+
+      #display img {
+        height:200px;
+        width:250px;
+       }
+       
+      a {font-size: 200%; }
+      p {font-size: 250%; }
     }
 /* End Display for Portrait Phones*/
 
@@ -103,12 +204,7 @@ main {
         margin-top:20%;
         margin-left: 0%;  
       }
-    
-    form {
-      
-        width: 60%;
-          
-    }
+   
     .search_holder input{
         top: 5px;
         left: 10px;
@@ -119,6 +215,8 @@ main {
         width: 40%;
         margin: 37px 0 0 40%;
           }
+
+         
     
     }
     /* End Display for Portrait Phones*/

@@ -1,183 +1,204 @@
-/*General sections body*/
+/* main section style*/
+  
 
 body{
-    margin: 0;
+  margin: 0;
+}
+main {
+  display:inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 15%;
+  margin-left: 20%;
+  padding-bottom: 15%;
+  font-family: sans-serif;
+  position:absolute;
+  overflow-y:auto;
+  
 }
 
-/*main*/
-main {
-    top: 15%;
-    margin-left: 40%;
-    font-family: sans-serif;
-    
-  }
-  
- /* Header Styles Start */
+.imgFormat{
+  width:63%;
+  margin: 0 auto;
+  padding:1em;
+}
+
+.floatright{
+  width:65%;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+h1{
+  margin: 0 auto;
+  font-size: 240%;
+  text-align: center;
+  padding-bottom: 10px;
+}
+h2{
+  margin: 0 auto;
+  font-size: 200%;
+  text-align: center;
+  padding-bottom: 5px;
+  background-color: cornsilk;
+  color: orange;
+  font-family: cursive;
+}
+
+.slicknav_menu {
+  display: none;
+ }
+
+ #nav_menu{
+  display: none;
+ }
+/* main section style///////////////////////////////////////
+  */
+  /* Header Styles Start */
 .header_wrapper{
-    width: 100%;
-    height: 19%;
-    position: fixed;
-    top: 0;
-    background-image: linear-gradient(to right, #ff9800c7 55%, yellow);
-    z-index: 10;
+  width: 100%;
+  height: 19%;
+  position: fixed;
+  top: 0;
+  background-image: linear-gradient(to right, #ff9800c7 55%, yellow);
+  z-index: 10;
+ 
 }
 
 .feast_logo{
-    width: 125px;
-    height:100%;
-    float: right;
+  width: 125px;
+  height:100%;
+  float: right;
 }
 
 .ofo_txt{
-    position: absolute;
-    margin: 38px 0 0 7%;
-    font-size: 36px;
-    font-family: emoji;
-    color: maroon;
+  position: absolute;
+  margin: 38px 0 0 7%;
+  font-size: 36px;
+  font-family: emoji;
+  color: maroon;
 }
 
 .search_holder{
-    height: 40px;
-    width: 415px;
-    position: relative;
-    background-color: white;
-    margin: 37px 0 0 40%;
-    border-radius: 10px;
-    box-shadow: rgb(0,0,0,0.29) 2px 4px 5px;
+  height: 40px;
+  width: 40%;
+  position: relative;
+  background-color: white;
+  margin: 37px 0 0 40%;
+  border-radius: 10px;
+  box-shadow: rgb(0,0,0,0.29) 2px 4px 5px;
 
 }
 
 .search_holder img{
-    width: 30px;
-    position: absolute;
-    top: 5px;
-    left: 10px;
-
+  width: 30px;
+  position: absolute;
+ 
 }
 
 .search_holder input{
-    outline: none;
-    border: none;
-    width: 360px;
-    height: 33px;
-    position: absolute;
-    left: 48px;
-    top: 2px;
+  outline: none;
+  border: none;
+  width: 30%;
+  height: 33px;
+  position: absolute;
+  left: 48px;
+  top: 2px;
 
 }
 
-/* Header Styles End*/
+/* Header Styles End ///////////////////////////////////////*/
 
-
-
-/* media for tablet and laptop and Above/* Main Styles Start */
-
-@media only screen and (min-width: 768px){
-  
-.aboutuswrapper{
-   
-   width:100%;
-   margin-top:9%;
-   margin-bottom: 5em;
-   margin-left:0%;
-   float: right;
-   position: relative;
+.header_img_holder{
+  justify-self: flex-end;
 }
-
-p{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: justify;
-    margin-left: 25%;
- }
-
-h2{font-size: 150%;padding-bottom:.2em;margin-left: 25%;}
-    
-main img{
-    float:right; 
-    padding-left:2em;
-    padding-right:1em;
-    padding-bottom:1em;
-    max-width:70%;
-    }
-
-}
- /* About Us Section for tablets and laptop*/
-  
-/* About Us Section*//*For mobile devices and tablets */
-
+/* Display for Portrait Phones and tablets///////////////////////////////////////*/
 @media only screen and (max-width: 767px) {
  
-.aboutuswrapper{
-    border:2px ;  
-    width: 90%;
-    margin: 0 auto;
-    margin-top: 35%;
-       }
-
 .search_holder input{
-    top: 7px;
-    left: 50px;
+     
+  top: 5px;
+  left: 40px;
 }
-    
+  
 .search_holder{
-    width: 100%;
-    margin: 130px 0 0 0%;
+  width: 100%;
+  margin: 120px 0 0 0%;
 }
-p{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande','Lucida Sans', Arial, sans-serif;
-    padding-bottom:2%;
-    color: brown;
-    font-size: 90%;
-    text-align: justify;
+
+
+.imgFormat{
+      
+  width:90%;
+  margin: 0 auto;
+  padding:1em;
 }
-           
-h2{
-    padding-top:1em;
-    font-size: 140%;
-    padding-bottom:.5em;
-    text-align: center;
-    color:maroon
+      
+.floatright{
+  width:92%;
+  margin: 0 auto;
+         /* border: 2px solid black;*/
+  text-align: justify;
 }
-               
-main img{
-    width:100%;
-    max-width:100%;
+
+.slicknav_menu {
+ display: block;
+ margin-top: 156px;
+ position:relative;
+        
+}
+   
+main{
+ display:inline-flex;
+ flex-direction: column;
+ margin:auto;
+ margin-left:10%;
+ position: relative;
+ justify-content: center;
+ width:80%;
+}
+
+aside{
+
+  display:none;
+}
+
+h1{
+  font-size:200%;
 }
 
 }
-
-/* Main Styles End */
-
+  /* End Display for mobile and Tablets ///////////////////////////////////////*/
 /* Footer Styles Start */
 footer{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 6.1%;
-    background-image: linear-gradient(to right, #ff9800c7 70%, yellow);
-    z-index: 10;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 6.1%;
+  background-image: linear-gradient(to right, #ff9800c7 70%, yellow);
+  z-index: 10;
 }
 
 .copyright_text{
-    position: absolute;
-    color: maroon;
-    opacity: 0.8;
-    font-size: 20px;
-    top: 10px;
-    left: 55px;
-    font-family: emoji;
-    font-weight: bold;
+  position: absolute;
+  color: maroon;
+  opacity: 0.8;
+  font-size: 20px;
+  top: 10px;
+  left: 55px;
+  font-family: emoji;
+  font-weight: bold;
 }
 
 .social_site_icons{
-    width: 100px;
-    position: absolute;
-    right: 0;
-    top: 10px;
+  width: 100px;
+  position: absolute;
+  right: 0;
+  top: 10px;
 }
 
 .social_site_icons img{
-    width: 20px
+  width: 20px
 }
 
 /* Footer Styles End */
