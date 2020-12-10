@@ -4,79 +4,79 @@ body{
 main {
     margin-top: 15%;
     margin-left: 40%;
+    padding-bottom: 10%;
     font-family: sans-serif;
+    position:absolute;
+    overflow-y:auto;
     
-  }
-  #setMarg{ border: 2px solid white;
-  }
- 
- /* Display for Portrait Phones and tablets*/
-  @media only screen and (max-width: 767px) {
-      
-main {
-    margin-top:40%;
-    margin-left: 10%;
-    margin-right: auto;
-    min-width: 470px;
-    height:auto;
-  }
-      
- form { 
-      width: 75%;  
-            
-        }
- .search_holder input{
-   
-    top: 50px;
-    left: 13px;
- }
+}
+  
 
- .search_holder{
-    width: 100%;
-    margin: 130px 0 0 0%;
-      }
-    }
-/* End Display for Portrait Phones*/
+.slicknav_menu {
+    display: none;
+}
+  
+#nav_menu{
+    display: none;
+}
 
+ form span{ 
+      color: red;
+}
 
+#pFormat{
+    padding-top: 10px;
+    text-align: center;
+    color:maroon;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+form img{
+    height:30px;
+    width:30px;
+    padding-top:20px;
+}
 
 /* Display for screen larger than Portrait Phones*/
 
 @media only screen and (min-width: 768px) {
      
-main {
+/*main {
     margin-top:20%;
 
-  }
- /* aside{height:100%;
-
-    margin-top: 15%; border: 2px solid red;
-    }*/
-      
-    form {
-      
-        width: 60%;
-          
-    }
-    .search_holder input{
-        top: 5px;
-        left: 10px;
+}*/
+        
+.search_holder input{
+    top: 5px;
+    left: 10px;
        
-     }
+}
+
+.search_holder{
+    width: 40%;
+    margin: 37px 0 0 40%;
+}
     
-     .search_holder{
-        width: 40%;
-        margin: 37px 0 0 40%;
-          }
-    
-    }
-    /* End Display for Portrait Phones*/
+}
+/* End Display for computers*/
     
 
-  fieldset{border-color: maroon; }
-  b{color:maroon; }
+fieldset{
+      border-color: maroon; 
+}
+
+b{
+    color:maroon; 
+}
+
+h2{
+    text-align: center;
+    font-size: 205%;
+    width: 70%;
+}
  
-  .sendButton {
+#sendButton {
     border-radius: 5px;
     border: 2px solid grey;
     background-color:gold;
@@ -84,15 +84,24 @@ main {
     font-weight: bold;
     color:maroon;
 }
+#resetButton {
+    border-radius: 5px;
+    border: 2px solid gold;
+    background-color: #999;
+    box-shadow: 1px 1px 1px grey;
+    font-weight: bold;
+    color:maroon;
+}
 
 form {
-    border: 6px solid gold;
-    padding-top: 1em;
+     border: 6px solid gold;
+     padding-top: 1em;
      padding-left: 30px;
      padding-right: 30px;
      padding-bottom:30px;
      border-radius: 10px 10px 10px 10px;
      box-shadow: 3px 3px 4px 4px grey; 
+     width: 60%;
      
  }
  form input{
@@ -108,6 +117,52 @@ form textarea{
     border: 1px solid #ccc;
     line-height: 1.5;
 }
+
+/* Display for mobiles and tablets*/
+@media only screen and (max-width: 767px) {
+      
+main {
+    margin-top:20%;
+    margin-left: 10%;
+    margin-right: auto;
+    min-width: 470px;
+    height:auto;
+}
+    
+form { 
+    width: 75%;  
+        
+}
+.search_holder input{
+    top: 50px;
+    left: 13px;
+}
+
+.search_holder{
+    width: 100%;
+    margin: 120px 0 0 0%;
+}
+
+#side{
+    display: none;
+}
+
+.slicknav_menu {
+    display: block;
+    margin-top: 155px;
+    position:relative;
+        
+}
+
+h2{
+   text-align: center;
+   font-size: 200%;
+   width: 87%;
+}
+    
+}
+/* End Display for mobiles and tablets*/
+    
 
 /* Header Styles Start */
 .header_wrapper{
@@ -136,33 +191,29 @@ form textarea{
 
 .search_holder{
     height: 40px;
-  /*  width: 40%;*/
     position: relative;
     background-color: white;
-   /* margin: 37px 0 0 40%;*/
     border-radius: 10px;
     box-shadow: rgb(0,0,0,0.29) 2px 4px 5px;
 
 }
 
 .search_holder img{
- width: 30px;
+    width: 30px;
     position: absolute;
-    /*top: 5px;
-    left: 10px;*/
-
+    
 }
 
 .search_holder input{
     outline: none;
     border: none;
-    width: 30%;/*360px;*/
+    width: 30%;
     height: 33px;
     position: absolute;
     left: 48px;
     top: 2px;
-
 }
+
 
 /* Header Styles End*/
 

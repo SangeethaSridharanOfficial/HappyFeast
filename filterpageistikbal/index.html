@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<header><link rel="stylesheet" href="main.css"></header>
+<head>
+<style>
+  body {
+    background-image: url('background.jpg');
+  }
+  </style>
+</head>
+<body>
+<div>
+<h1>MENU</h1>
+
+<h3>You can see all options</h3>
+<h3>Click your choice</h3>
+
+
+<div id="myBtnContainer">
+  <button class="btn" onclick="filterSelection('starter')"> Starters</button>
+  <button class="btn" onclick="filterSelection('main')"> Main</button>
+  <button class="btn" onclick="filterSelection('salad')"> Salads</button>
+  <button class="btn" onclick="filterSelection('desert')"> Deserts</button>
+  <button class="btn" onclick="filterSelection('beverage')"> Beverages</button>
+</div>
+
+<div class="container">
+  <div class="filterDiv starter">Potted crab</div>
+  <div class="filterDiv colors desert"> ice creams</div>
+  <div class="filterDiv starter">Tangri Kebabs</div>
+  <div class="filterDiv desert">puddings</div>
+  <div class="filterDiv starter ">Cheese Balls</div>
+  <div class="filterDiv desert">pies</div>
+  <div class="filterDiv salad">Green salad</div>
+  <div class="filterDiv salad">Fruit salads</div>
+  <div class="filterDiv main">Burgers</div>
+  <div class="filterDiv main ">Easy Meatloaf</div>
+  <div class="filterDiv main">Chicken Dishes</div>
+  <div class="filterDiv main">Macaroni and Cheese</div>
+  <div class="filterDiv salad">Bound salads</div>
+  <div class="filterDiv beverage">Wine</div>
+  <div class="filterDiv beverage">Tea</div>
+  <div class="filterDiv beverage">Hot chocolate</div>
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+ // if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
+  }
+}
+
+function AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+</div>
+</body>
+
+</html>

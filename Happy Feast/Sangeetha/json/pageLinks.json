@@ -1,0 +1,60 @@
+{
+    "mealLInk": [
+        {
+            "name": "Home",
+            "link": "../../HomePage/HomePage.html"
+        },
+        {
+            "name": "AboutUs",
+            "link": "../../HomePage/HomePage.html"
+        },
+        {
+            "name": "MealOrder",
+            "link": "../pages/mealOrder.html"
+        },
+        {
+            "name": "Search Order",
+            "link": "../pages/searchOrder.html"
+        },
+        {
+            "name": "Order tracking",
+            "link": "../pages/orderTracking.html"
+        },
+        {
+            "name": "ContactUs",
+            "link": "../../HomePage/HomePage.html"
+        },
+        {
+            "name": "Feedback",
+            "link": "../../Feedback/feedback.html"
+        },
+        {
+            "name": "Review and rating",
+            "link": "../../Review/review.html"
+        },
+        {
+            "name": "Discount",
+            "link": "../../HomePage/HomePage.html"
+        },
+        {
+            "name": "Tour",
+            "link": "../../HomePage/HomePage.html"
+        },
+        {
+            "name": "Filter",
+            "link": "../../HomePage/HomePage.html"
+        },
+        {
+            "name": "Game",
+            "link": "../../HomePage/HomePage.html"
+        },
+        {
+            "name": "Membership",
+            "link": "../../Membership/membership.html"
+        },
+        {
+            "name": "Career",
+            "link": "../../CareerPage/CareerPage.html"
+        }
+    ]
+}

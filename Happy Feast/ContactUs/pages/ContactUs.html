@@ -5,18 +5,21 @@
         <title> HappyFeast | Contact Us</title>
         <meta charset="utf-8" />
           <!--
-        The Contact Us page displays a for which provides the avenue for clients  to contact HappyFeast. The page will remove the side menu bar when reached the mobile and 
-        tablet size, but shows the side menu bar when screen size is above 780px
+        The Contact Us page displays a for which provides the avenue for clients  to contact HappyFeast. The page will remove 
+        the side menu bar when reached the mobile and tablet size and shows the mobile menu instead, but shows the side menu bar when screen size is above 780px
         --> 
-        <!--Information created in this area is mainly to provide information the the browser and not 
-            necessarily for the audience. The title however will be shown in the title bar of the browser,
-            therefore, it will be visible to persons.The icon also will be displayed-->
+      
         <link rel="stylesheet" href="../styles/ContactUs.css"/>
         <link rel="stylesheet" href="../styles/helper.css"/>
+        <link rel="stylesheet" href="../styles/slicknav.css">
         <link rel="fav icon" href="../images/general/favicon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="This page provides a form and information for persons to contact the restaurant" />
         <meta name="keyword" content="Restaurant, coffee, snack, food, tea shop, dining, drink" />
+
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="../js/jquery.slicknav.min.js"></script>
+       
     </head>
     <body>
         <header class="header_wrapper">
@@ -42,28 +45,56 @@
                 <li><a href="../../HomePage/HomePage.html">Filter</a></li>
                 <li><a href="../../HomePage/HomePage.html">Game</a></li>
                 <li><a href="../../Membership/membership.html">Membership</a></li>
-                <li><a href="../../CareerPage/CareerPage.html">"Career</a></li>
+                <li><a href="../../CareerPage/CareerPage.html">Career</a></li>
             </ul>
         </aside>
     </div>
+    <nav id="mobilemenu"> </nav>
+    <nav id="nav_menu">
+        <ul>     
+            <li><a href="../../HomePage/HomePage.html">Home</a></li>
+            <li><a href="./mealOrder.html">MealOrder</a></li>
+            <li><a href="../../HomePage/HomePage.html">AboutUs</a></li>
+            <li><a href="../../HomePage/HomePage.html">ContactUs</a></li>
+            <li><a href="./orderTracking.html">Order tracking</a></li>
+            <li><a href="../../HomePage/HomePage.html">Discount</a></li>          
+            <li><a href="../../HomePage/HomePage.html">Other</a> 
+                <ul>
+                    <li><a href="../../Feedback/feedback.html">Feedback</a></li>
+                    <li><a href="../../Review/review.html">Review and rating</a></li>
+                    <li><a href="../../HomePage/HomePage.html">Tour</a></li>
+                    <li><a href="../../HomePage/HomePage.html">Filter</a></li>
+                    <li><a href="../../HomePage/HomePage.html">Game</a></li>
+                    <li><a href="../../Membership/membership.html">Membership</a></li>
+                    <li><a href="../../CareerPage/CareerPage.html">Career</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
             <main>
-              <form  >
-                    <fieldset><legend><b>Have a question or comment?</b></legend><p><em> You're in the right place!!</em>
+              <h2> Welcome to Our Contact Us Page</h2>
+              <form name="conForm" method="get" >
+                    <fieldset><legend><b>Want to Contact Us?</b></legend><p><em> You're in the right place!!</em>
                     Please complete and submit the form below and we will get in touch with you as soon as possible.</p>
                     <label for="Fname" >First Name</label> <br/>
-                    <input type="text" id="Fname" name="FName" > <br/>
+                    <input type="text" id="Fname" name="FName" ><span>*</span><br/><br/>
                     <label for= "Lname"> Last Name</label> <br/>
-                    <input type="text" id="Lname" name="LName"><br/>
+                    <input type="text" id="Lname" name="LName" ><span>*</span><br/><br/>
                     <label for="PhoneNum">Phone Number</label><br/>
-                    <input type="text" id="PhoneNum" name="PhoneNum"><br/>
-                    <label for="EmailAdd">Email Address</label><br/>
-                    <input type="text" id="EmailAdd" name="EmailAdd"><br/><br/>
+                    <input type="text" id="PhoneNum" name="Phonenum"><br/><br/>
+                    <label for="EmailAdd" >Email Address</label><br/>
+                    <input type="text" id="EmailAdd" name="Emailadd" required><span></span><br/><br/>
                     <label>Please enter your question or comment below:</label>
                     <textarea id="comment" name="comment"> </textarea><br/><br/>
-                    <input type="submit" value="Send" class=sendButton>
+                    <input type="button" value="Send" id="sendButton" onclick="validateForm()"><br/>
+                    <input type="button" value="Reset" id="resetButton" onclick="resetForm()">
                     </fieldset>
+                    <span id="pFormat">We can also be contacted by Social Media</span>
+                    <img src="../images/general/facebook.png"/>
+                    <img src="../images/general/twitter.png"/>
+                    <img src="../images/general/google.png">
                 </form>
-            </main>
+            </main> <script src="../js/ContactUs.js"></script>
           <footer>
             <span class="copyright_text">Copyright &copy; 2020 HappyFeast</span>
             <div class="social_site_icons">

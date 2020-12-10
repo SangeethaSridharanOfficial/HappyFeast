@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<Meta Charset="UTF-8">
+<script src="Main.js" type="text/javascript" ></script>
+<link href="Main.css" rel="stylesheet" type="text/css"/>
+<title> Awesome Multiple Choice Quiz </title>
+<style>
+    body {
+      background-image: url('styles/Picture1.jpg');
+    }
+    </style>
+</head>
+
+<body>
+    <div>
+<h1> To get %10 discount , find 8 and more correct answers </h1>
+<form id = "quiz" name = "quiz">
+
+<h3> 1.What oil is used for cooking in South India? </h3>
+<input type="radio" id= "MCQ" name ="question1" value = "stuff1"> a) Coconut oil
+<br>
+<input type="radio" id= "MCQ" name ="question1" value = "stuff2"> b) Sunflower Oil
+<br>
+<input type="radio" id= "MCQ" name ="question1" value = "stuff3"> c) Olive Oil
+<br>
+<input type="radio" id= "MCQ" name ="question1" value = "stuff4"> d) None of these
+<h4> 2.Which is the national vegetable of India? </h4>
+<input type="radio" id= "MCQ" name ="question2" value = "stuff5"> a) lady’s-finger
+<br>
+<input type="radio" id= "MCQ" name ="question2" value = "stuff6"> b) Brinjal
+<br>
+<input type="radio" id= "MCQ" name ="question2" value = "stuff7"> c) Meetha Kaddu
+<br>
+<input type="radio" id= "MCQ" name ="question2" value = "stuff8"> d) None of these
+<br>
+<h4> 3. Which is the national food of India? </h4>
+<input type="radio" id= "MCQ" name ="question3" value = "stuff9"> a) Khichdi
+<br>
+<input type="radio" id= "MCQ" name ="question3" value = "stuff10"> b) Roti
+<br>
+<input type="radio" id= "MCQ" name ="question3" value = "stuff11"> c) Dal
+<br>
+<input type="radio" id= "MCQ" name ="question3" value = "stuff12"> d) None of these
+<br>
+<h4> 4. Which Vitamins are rich in Carrots? </h4>
+<input type="radio" id= "MCQ" name ="question4" value = "stuff13"> a) Vitamin A
+<br>
+<input type="radio" id= "MCQ" name ="question4" value = "stuff14"> b) Vitamin K1
+<br>
+<input type="radio" id= "MCQ" name ="question4" value = "stuff15"> c) Vitamin B6
+<br>
+<input type="radio" id= "MCQ" name ="question4" value = "stuff16"> d) all of above
+<br>
+<h3> 5.Strawberry is good source of which vitamin? </h3>
+<input type="radio" id= "MCQ" name ="question5" value = "stuff17"> a) Vitamin C 
+<br>
+<input type="radio" id= "MCQ" name ="question5" value = "stuff18"> b) Vitamin A
+<br>
+<input type="radio" id= "MCQ" name ="question5" value = "stuff19"> c) Vitamin K
+<br>
+<input type="radio" id= "MCQ" name ="question5" value = "stuff20"> d) None of these
+<br>
+<h4> 6.Lectin protein is found in __________. </h4>
+<input type="radio" id= "MCQ" name ="question6" value = "stuff21"> a) Wheat   
+<br>
+<input type="radio" id= "MCQ" name ="question6" value = "stuff22"> b) Rice
+<br>
+<input type="radio" id= "MCQ" name ="question6" value = "stuff23"> c) Milk
+<br>
+<input type="radio" id= "MCQ" name ="question6" value = "stuff24"> d) None of these
+<br>
+<h4> 7. Where does the Caesar salad originate from? </h4>
+<input type="radio" id= "MCQ" name ="question7" value = "stuff25"> a) Canada
+<br>
+<input type="radio" id= "MCQ" name ="question7" value = "stuff26"> b) Italy
+<br>
+<input type="radio" id= "MCQ" name ="question7" value = "stuff27"> c) Mexico   
+<br>
+<input type="radio" id= "MCQ" name ="question7" value = "stuff28"> d) None of these
+<br>
+<h4> 8. Where does coffee originate from? </h4>
+<input type="radio" id= "MCQ" name ="question8" value = "stuff29"> a) Vitamin A
+<br>
+<input type="radio" id= "MCQ" name ="question8" value = "stuff30"> b) Italy
+<br>
+<input type="radio" id= "MCQ" name ="question8" value = "stuff31"> c) Ethiopia     
+<br>
+<input type="radio" id= "MCQ" name ="question8" value = "stuff32"> d) all of above
+<br>
+<h4> 9. Where does wheat originate from? </h4>
+<input type="radio" id= "MCQ" name ="question9" value = "stuff33"> a) China
+<br>
+<input type="radio" id= "MCQ" name ="question9" value = "stuff34"> b) Turkey  
+<br>
+<input type="radio" id= "MCQ" name ="question9" value = "stuff35"> c) Brazil
+<br>
+<input type="radio" id= "MCQ" name ="question9" value = "stuff36"> d) None of these
+<br>
+<h4> 10. Which country is famous for Mangoes? </h4>
+<input type="radio" id= "MCQ" name ="question10" value = "stuff37"> a) USA
+<br>
+<input type="radio" id= "MCQ" name ="question10" value = "stuff38"> b) China
+<br>
+<input type="radio" id= "MCQ" name ="question10" value = "stuff39"> c) India  
+<br>
+<input type="radio" id= "MCQ" name ="question10" value = "stuff40"> d) None of these
+<br>
+<br>
+<input id = "BTN" type = "button" value ="Next" onclick = "check();">
+</form>
+
+<div id="after_submit">
+
+<p id ="message"></p>
+<p id ="number_correct"></p>
+<img id ="picture">
+</div>
+</body>
+</html> 
+<script>
+
+function check(){
+
+var question1 = document.quiz.question1.value;
+var question2 = document.quiz.question2.value;
+var question3 = document.quiz.question3.value;
+var question4 = document.quiz.question4.value;
+var question5 = document.quiz.question5.value;
+var question6 = document.quiz.question6.value;
+var question7 = document.quiz.question7.value;
+var question8 = document.quiz.question8.value;
+var question9 = document.quiz.question9.value;
+var question10 = document.quiz.question10.value;
+var correct = 0;
+
+
+if (question1 == "stuff1") {
+    correct++;
+}
+
+if (question2 == "stuff7") {
+    correct++;
+    
+}
+if (question3 == "stuff9") {
+    correct++;
+    
+}
+if (question4 == "stuff16") {
+    correct++;
+    
+}
+if (question5 == "stuff17") {
+    correct++;
+}
+
+if (question6 == "stuff21") {
+    correct++;
+    
+}
+
+if (question7 == "stuff27") {
+    correct++;
+    
+}
+if (question8 == "stuff31") {
+    correct++;
+    
+}
+if (question9 == "stuff34") {
+    correct++;
+}
+
+if (question10 == "stuff39") {
+    correct++;
+    
+}
+var messages = ["Not enough", "Very close", "Perfect"];
+var pictures =  ["styles/notenougph.jpg", "styles/almostdone.jpg", "styles/perfect.jpg"];
+
+var range;
+
+if (correct <= 5) {
+    range = 0;
+}
+
+if (correct > 5 && correct < 8) {
+    range = 1;
+}
+
+if (correct >= 8) {
+    range = 2;
+}
+
+document.getElementById("after_submit").style.visibility = "visible";
+document.getElementById("message").innerHTML = messages[range];
+document.getElementById("number_correct").innerHTML = "You got " + 
+correct + " correct.";
+document.getElementById("picture").src = pictures[range];
+}
+</script>
+</div>
+</body>
+</html>

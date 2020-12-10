@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(243, 243, 194);
+ 
+}
+
+
+div {
+
+    background-color: white;
+    width: 850px;
+    margin: auto;
+    border: 1px solid black ;
+    border-radius: 25px;
+}
+
+div #after_submit {
+    background-color: turquoise;
+    font-size: larger;
+    font-style: inherit;
+
+}
+
+h1{
+    color: red;
+}
+
+div #after_submit #number_correct {
+    color: red;
+}

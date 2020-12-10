@@ -1,0 +1,16 @@
+body {
+    background-color: bisque;
+    background-repeat: round;
+}
+
+div {
+
+    background-color: rgb(252, 237, 237);
+    width: 750px;
+    margin: auto;
+    border: 1px solid black ;
+    border-radius: 25px;
+    text-align: center;
+
+
+}
