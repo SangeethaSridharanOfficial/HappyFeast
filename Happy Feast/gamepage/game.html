@@ -5,6 +5,7 @@
 <Meta Charset="UTF-8">
 <script src="Main.js" type="text/javascript" ></script>
 <link href="Main.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="../Common/HeaderFooterStyle.css"/>
 <title> Awesome Multiple Choice Quiz </title>
 <style>
     body {
@@ -14,7 +15,20 @@
 </head>
 
 <body>
-    <div>
+    <header class="header_wrapper">
+        <img
+          alt="happyfeastLogo"
+          class="feast_logo"
+          src="../Common/Images/happyfeastlogod.webp"
+        />
+        <h1 class="ofo_txt">Play game get discount</h1>
+        <div class="search_holder">
+          <img alt="searchIcon" src="../Common/Images/search.png" />
+          <input type="text" placeholder="Search for restaurant..." />
+        </div>
+      </header>
+ 
+    <div class="game-main">
 <h1> To get %10 discount , find 8 and more correct answers </h1>
 <form id = "quiz" name = "quiz">
 
@@ -202,5 +216,13 @@ document.getElementById("picture").src = pictures[range];
 }
 </script>
 </div>
+<footer>
+    <span class="copyright_text">Copyright &copy; 2020 HappyFeast</span>
+    <div class="social_site_icons">
+      <img alt="facebook" src="../Common/Images/facebook.png" />
+      <img alt="google" src="../Common/Images/google.png" />
+      <img alt="twitter" src="../Common/Images/twitter.png" />
+    </div>
+  </footer>
 </body>
 </html>
