@@ -33,7 +33,7 @@
           location.href = "../CareerPage/CareerPage.html";
         }
         if (selectedOption === "discount") {
-          //location.href="";
+          location.href = "../discountcalculator/index.html";
         }
       };
     </script>
@@ -63,19 +63,24 @@
           </div>
         </div>
         <!-- discount section -->
-        <div class="discount">
+        <div class="discount" onclick="redirect('discount')">
           <div class="discounttext">
             <h2>Know about today's special offers</h2>
           </div>
-        <img class="discount-image" alt="discount image" src="Images/disc2.jpg" />
-      </div>
-      <div class="tour" onclick="redirect('tour')">
-        <img class="tour-image" alt="tour icon" src="./Images/guide.png" />
-        <div class="tour-text">
-          <h2>
-            Take a tour of our page and know how to access all the features
-          </h2>o
+          <img
+            class="discount-image"
+            alt="discount image"
+            src="Images/disc2.jpg"
+          />
         </div>
+        <div class="tour" onclick="redirect('tour')">
+          <img class="tour-image" alt="tour icon" src="./Images/guide.png" />
+          <div class="tour-text">
+            <h2>
+              Take a tour of our page and know how to access all the features
+            </h2>
+            o
+          </div>
         </div>
         <!-- track your order component -->
         <div class="track" onclick="redirect('track')">
@@ -101,8 +106,8 @@
             <a href="../Sangeetha/pages/searchOrder.html">Search</a>
             <a href="../Membership/membership.html">Get Membership</a>
             <a href="../Review/review.html">Review and Rating</a>
-            <a href="#">Filter Options</a>
-            <a href="#">Games</a>
+            <a href="../filterpage/index.html">Filter Options</a>
+            <a href="../gamepage/game.html">Games</a>
             <a href="../Feedback/feedback.html">Feed Back</a>
             <a href="../AboutUs/pages/AboutUs.html">About us</a>
             <a href="../ContactUs/pages/ContactUs.html">Contact us</a>
