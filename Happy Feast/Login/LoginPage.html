@@ -10,10 +10,11 @@
     <meta name="keywords" content="Login" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script>
-      var isErrorPassword = false;
+      //to clear in line error message while typing a password or username
       const validation = () => {
         document.getElementById("error-password").innerHTML = "";
       };
+      // validation on login click
       const onLoginClick = () => {
         if (
           (document.getElementById("username").value === "user1" ||
@@ -27,11 +28,13 @@
           );
           location.href = "../HomePage/HomePage.html";
         } else {
+          // display inline error message if invalid credentials are entered
           document.getElementById("error-password").innerHTML =
             "incorrect username or password";
           clearCredentials();
         }
       };
+      //clear credentials entered when invalid creds are entered
       const clearCredentials = () => {
         document.getElementById("username").value = "";
         document.getElementById("password").value = "";
