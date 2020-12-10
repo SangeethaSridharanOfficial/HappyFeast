@@ -14,11 +14,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script>
       var uname = localStorage.getItem("uname");
-
+      //display username on successfull login
       window.onload = function () {
         document.getElementById("welcome").innerHTML = `Welcome ${uname}`;
       };
-
+      //function to redirect to respective pages using the props sent
       const redirect = (selectedOption) => {
         if (selectedOption === "ordermeals") {
           location.href = "../sangeetha/pages/mealOrder.html";
@@ -55,12 +55,14 @@
     <main>
       <h1 id="welcome"></h1>
       <div class="select-options">
+        <!-- order meals feature -->
         <div class="orderfood" onclick="redirect('ordermeals')">
           <img class="foodimage" alt="food image" src="./Images/burger.gif" />
           <div class="ordertext">
             <h2>Hungry? Order delicous food online.</h2>
           </div>
         </div>
+        <!-- discount section -->
         <div class="discount">
           <div class="discounttext">
             <h2>Know about today's special offers</h2>
@@ -75,13 +77,14 @@
           </h2>o
         </div>
         </div>
+        <!-- track your order component -->
         <div class="track" onclick="redirect('track')">
           <div class="trackordertext">
             <h2>Track the status of your order</h2>
           </div>
           <img class="trackImage" alt="track icon" src="./Images/del2.gif" />
         </div>
-
+        <!-- navigate to career page on click -->
         <div class="career" onclick="redirect('careerguide')">
           <img
             class="careerImage"
@@ -93,6 +96,7 @@
           </div>
         </div>
         <nav>
+          <!-- navigation menu to navigate to other pages -->
           <div class="sidenav">
             <a href="../Sangeetha/pages/searchOrder.html">Search</a>
             <a href="../Membership/membership.html">Get Membership</a>

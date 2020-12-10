@@ -3,27 +3,30 @@
   <head>
     <title>Happy Feast</title>
     <link rel="stylesheet" href="ApplicationForm.css" />
-    <link rel="stylesheet" href="../Common/HeaderFooterStyle.css"/>
-    <script></script>
+    <link rel="stylesheet" href="../Common/HeaderFooterStyle.css" />
+    <script>
+      //alert on application submit
+      const submitApplication = () => {
+        alert("Thanks for applying we will get back ");
+        location.href = "../HomePage/HomePage.html";
+      };
+    </script>
   </head>
   <body>
     <header class="header_wrapper">
-        <img
-          alt="happyfeastLogo"
-          class="feast_logo"
-          src="../Common/Images/happyfeastlogod.webp"
-        />
-        <h1 class="ofo_txt">Job Application</h1>
-        <div class="search_holder">
-          <img alt="searchIcon" src="../Common/Images/search.png" />
-          <input type="text" placeholder="Search for restaurant..." />
-        </div>
-      </header>
+      <img
+        alt="happyfeastLogo"
+        class="feast_logo"
+        src="../Common/Images/happyfeastlogod.webp"
+      />
+      <h1 class="ofo_txt">Job Application</h1>
+      <div class="search_holder">
+        <img alt="searchIcon" src="../Common/Images/search.png" />
+        <input type="text" placeholder="Search for restaurant..." />
+      </div>
+    </header>
     <div class="testbox">
-      <form action="/">
-        <!-- <div class="banner">
-          <h1>Job Application Form</h1>
-        </div> -->
+      <form>
         <p class="top-info">
           Thank you for your interest in working with us. Please check below for
           available job opportunities that meet your criteria and send your
@@ -135,17 +138,19 @@
           </div>
         </div>
         <div class="btn-block">
-          <button type="submit" href="/">Apply For The Job</button>
+          <button type="submit" onclick="submitApplication()">
+            Apply For The Job
+          </button>
         </div>
       </form>
     </div>
     <footer>
-        <span class="copyright_text">Copyright &copy; 2020 HappyFeast</span>
-        <div class="social_site_icons">
-          <img alt="facebook" src="../Common/Images/facebook.png" />
-          <img alt="google" src="../Common/Images/google.png" />
-          <img alt="twitter" src="../Common/Images/twitter.png" />
-        </div>
-      </footer>
+      <span class="copyright_text">Copyright &copy; 2020 HappyFeast</span>
+      <div class="social_site_icons">
+        <img alt="facebook" src="../Common/Images/facebook.png" />
+        <img alt="google" src="../Common/Images/google.png" />
+        <img alt="twitter" src="../Common/Images/twitter.png" />
+      </div>
+    </footer>
   </body>
 </html>
