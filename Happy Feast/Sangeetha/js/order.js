@@ -1,16 +1,27 @@
+/**
+ * @author Sangeetha Athiyur Sridharan
+ * @abstract Adding listener to the elements to handle the search 
+ */
+
 if(document.querySelector('.search_input')){
     document.querySelector('.search_input').addEventListener('keyup', e => handleKeyUp(e));
 }
 
+/**
+ * @abstract Adding listener to the elements to handle the submit button in form 
+ */
 if(document.querySelector('#submit')){
     document.getElementById('submit').addEventListener('click', e => {
         e.preventDefault();
-        formVerification(false);
+        formValidation(false);
     })
 }
 
-
-let formVerification = (isKeyUp) => {
+/**
+ * @abstract Function to handle the validation for the form using regex
+ * @param {used to identify keyup or click} isKeyUp 
+ */
+let formValidation = (isKeyUp) => {
     try{
         let emailRegex = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/,
         phoneRegex = /^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$/g,
@@ -38,10 +49,14 @@ let formVerification = (isKeyUp) => {
         }
 
     }catch(err){
-        console.error('Error in formVerification ', err.stack);
+        console.error('Error in formValidation ', err.stack);
     }
 }
 
+/**
+ * @abstract Handle search for the meals
+ * @param {to check the input value from the target} e 
+ */
 let handleSearch = (e) => {
     try{
         let { target } = e;
@@ -63,6 +78,10 @@ let handleSearch = (e) => {
     }
 }
 
+/**
+ * @abstract Handle search when value is empty or value is equal to the meal json
+ * @param {to check the value of the target is empty or not} e 
+ */
 const handleKeyUp = (e) => {
     try{
         e.preventDefault();
@@ -82,6 +101,9 @@ const handleKeyUp = (e) => {
     }
 }
 
+/**
+ * @abstract it is a self invoking function to set the restaurant value in the header using localstorage
+ */
 (() => {
     let descEle = document.querySelector('.OrderDesc');
     if(descEle){

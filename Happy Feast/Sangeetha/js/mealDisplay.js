@@ -1,4 +1,9 @@
 var mealLink = null;
+
+/**
+ * @author: Sangeetha Athiyur Sridharan
+ * @abstract To fetch the links for the page using axios from JSON
+ */
 let fetchLinks = () => {
     try{
         return new Promise((resolve, reject) => {
@@ -21,6 +26,12 @@ let fetchLinks = () => {
     }
 }
 
+/**
+ * @abstract When user clicks on order button it will store the object of that restaurant 
+ * to show it in order tracking page 
+ * @param {}
+ */
+
 let handleOrder = (e) => {
     try{
         let { target } = e,
@@ -33,6 +44,11 @@ let handleOrder = (e) => {
         console.error('Error in handleOrder ', err.stack);
     }
 }
+
+/**
+ * @abstract Used to render the restaurant UI
+ * @param {links for the meals to display} mealLinks 
+ */
 
 let renderMeals = (mealLinks) => {
     try{
@@ -68,6 +84,10 @@ let renderMeals = (mealLinks) => {
     }
 }
 
+/**
+ * @abstract To render the page links UI
+ */
+
 let renderPageLinks = () => {
     try{
         fetchLinks().then(linkObj => {
@@ -85,6 +105,11 @@ let renderPageLinks = () => {
         console.error('Error in renderPageLinks ', err.stack);
     }
 }
+
+/**
+ * @abstract it is a self invoking function 
+ * used to call the render fucntions to design the UI
+ */
 
 (() => {
     renderPageLinks();
