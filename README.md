@@ -1,4 +1,4 @@
-# final-project-web-techies
+# Happy Feast
 
 **HappyFeast**
 
