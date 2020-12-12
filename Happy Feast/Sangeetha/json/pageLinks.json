@@ -6,7 +6,7 @@
         },
         {
             "name": "AboutUs",
-            "link": "../../HomePage/HomePage.html"
+            "link": "../../AboutUs/pages/AboutUs.html"
         },
         {
             "name": "MealOrder",
@@ -22,7 +22,7 @@
         },
         {
             "name": "ContactUs",
-            "link": "../../HomePage/HomePage.html"
+            "link": "../../ContactUs/pages/ContactUs.html"
         },
         {
             "name": "Feedback",
@@ -34,19 +34,19 @@
         },
         {
             "name": "Discount",
-            "link": "../../HomePage/HomePage.html"
+            "link": "../../discountcalculator/index.html"
         },
         {
             "name": "Tour",
-            "link": "../../HomePage/HomePage.html"
+            "link": "../../Tour/pages/tour.html"
         },
         {
             "name": "Filter",
-            "link": "../../HomePage/HomePage.html"
+            "link": "../../filterpage/index.html"
         },
         {
             "name": "Game",
-            "link": "../../HomePage/HomePage.html"
+            "link": "../../gamepage/game.html"
         },
         {
             "name": "Membership",
