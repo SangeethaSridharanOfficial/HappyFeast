@@ -5,7 +5,7 @@
         <title> HappyFeast | Contact Us</title>
         <meta charset="utf-8" />
           <!--
-        The Contact Us page displays a for which provides the avenue for clients  to contact HappyFeast. The page will remove 
+        The Contact Us page displays a form which provides the avenue for clients  to contact HappyFeast. The page will remove 
         the side menu bar when reached the mobile and tablet size and shows the mobile menu instead, but shows the side menu bar when screen size is above 780px
         --> 
       
@@ -40,10 +40,10 @@
                 <li><a href="../../ContactUs/pages/ContactUs.html">ContactUs</a></li>
                 <li><a href="../../Feedback/feedback.html">Feedback</a></li>
                 <li><a href="../../Review/review.html">Review and rating</a></li>
-                <li><a href="../../HomePage/HomePage.html">Discount</a></li>
+                <li><a href="../../discountcalculator/index.html">Discount</a></li>
                 <li><a href="../../Tour/pages/Tour.html">Tour</a></li>
-                <li><a href="../../HomePage/HomePage.html">Filter</a></li>
-                <li><a href="../../HomePage/HomePage.html">Game</a></li>
+                <li><a href="../../filterpage/index.html">Filter</a></li>
+                <li><a href="../../gamepage/game.html">Game</a></li>
                 <li><a href="../../Membership/membership.html">Membership</a></li>
                 <li><a href="../../CareerPage/CareerPage.html">Career</a></li>
             </ul>
@@ -54,17 +54,17 @@
         <ul>     
             <li><a href="../../HomePage/HomePage.html">Home</a></li>
             <li><a href="./mealOrder.html">MealOrder</a></li>
-            <li><a href="../../HomePage/HomePage.html">AboutUs</a></li>
-            <li><a href="../../HomePage/HomePage.html">ContactUs</a></li>
+            <li><a href="../../AboutUs/pages/AboutUs.html">AboutUs</a></li>
+            <li><a href="../../ContactUs/pages/ContactUs.html">ContactUs</a></li>
             <li><a href="./orderTracking.html">Order tracking</a></li>
-            <li><a href="../../HomePage/HomePage.html">Discount</a></li>          
-            <li><a href="../../HomePage/HomePage.html">Other</a> 
+            <li><a href="../../discountcalculator/index.html">Discount</a></li>          
+            <li><a href="">Other</a> 
                 <ul>
                     <li><a href="../../Feedback/feedback.html">Feedback</a></li>
                     <li><a href="../../Review/review.html">Review and rating</a></li>
-                    <li><a href="../../HomePage/HomePage.html">Tour</a></li>
-                    <li><a href="../../HomePage/HomePage.html">Filter</a></li>
-                    <li><a href="../../HomePage/HomePage.html">Game</a></li>
+                    <li><a href="../../Tour/pages/Tour.html">Tour</a></li>
+                    <li><a href="../../filterpage/index.html">Filter</a></li>
+                    <li><a href="../../gamepage/game.html">Game</a></li>
                     <li><a href="../../Membership/membership.html">Membership</a></li>
                     <li><a href="../../CareerPage/CareerPage.html">Career</a></li>
                 </ul>
@@ -81,7 +81,7 @@
                     <label for= "Lname"> Last Name</label> <br/>
                     <input type="text" id="Lname" name="LName" ><span>*</span><br/><br/>
                     <label for="PhoneNum">Phone Number</label><br/>
-                    <input type="text" id="PhoneNum" name="Phonenum"><br/><br/>
+                    <input type="text" id="PhoneNum" name="Phonenum"><span></span><br/><br/>
                     <label for="EmailAdd" >Email Address</label><br/>
                     <input type="text" id="EmailAdd" name="Emailadd" required><span></span><br/><br/>
                     <label>Please enter your question or comment below:</label>
@@ -89,10 +89,13 @@
                     <input type="button" value="Send" id="sendButton" onclick="validateForm()"><br/>
                     <input type="button" value="Reset" id="resetButton" onclick="resetForm()">
                     </fieldset>
-                    <span id="pFormat">We can also be contacted by Social Media</span>
-                    <img src="../images/general/facebook.png"/>
-                    <img src="../images/general/twitter.png"/>
-                    <img src="../images/general/google.png">
+                    <p class="pFormat">We can also be contacted by clicking link below:</p>
+                    <p class="centerAlign"><a href="mailto:contactus@happyfeast.com">contactus@happyfeast.com</a></p>
+                    <p class="pFormat">Visit Us at:</p>
+                    <p class="centerAlign">
+                        <a href="https://facebook.com" target="_blank"> <img src="../images/general/facebook.png"/></a>
+                        <a href="https://twitter.com/Twitter" target="_blank"><img src="../images/general/twitter.png"/></a>
+                        <a href="https://www.google.com" target="_blank"><img src="../images/general/google.png"></a></p>
                 </form>
             </main> <script src="../js/ContactUs.js"></script>
           <footer>
@@ -104,4 +107,5 @@
             </div>
         </footer>
     </body>
-</html>
+  </html>
+ 
