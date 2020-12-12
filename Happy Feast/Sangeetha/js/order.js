@@ -1,5 +1,4 @@
 if(document.querySelector('.search_input')){
-    document.querySelector('.search_input').addEventListener('change', e => handleSearch(e));
     document.querySelector('.search_input').addEventListener('keyup', e => handleKeyUp(e));
 }
 
@@ -49,7 +48,7 @@ let handleSearch = (e) => {
         const listOfRest = ['alo', 'darkMoody', 'mumbaiLuxury', 'olive', 'pandemicLeaves', 'raintree', 'rival', 'waterfall'];
         
         listOfRest.forEach(val => {
-            if(target.value.includes(val) && document.querySelector(`.res_holder.${val}`)){
+            if((target.value.includes(val) || val === target.value.toLowerCase()) && document.querySelector(`.res_holder.${val}`)){
                 document.querySelectorAll('.res_holder').forEach(ele => {
                     if(!ele.classList.contains(val)){
                         ele.style.display = 'none';
@@ -66,14 +65,30 @@ let handleSearch = (e) => {
 
 const handleKeyUp = (e) => {
     try{
+        e.preventDefault();
         let { target } = e;
 
         if(!target.value){
             document.querySelectorAll('.res_holder').forEach(ele => {
                 ele.style.display = '';
             })
+        }else{
+            if (e.keyCode === 13) {
+                handleSearch(e);
+            }
         }
     }catch(err){
         console.error('Error in handleKeyUp ',err.stack);
     }
 }
+
+(() => {
+    let descEle = document.querySelector('.OrderDesc');
+    if(descEle){
+        descEle = descEle.querySelector('p');
+        if(localStorage.getItem('RestObj')){
+            let restObj = JSON.parse(localStorage.getItem('RestObj'));
+            descEle.innerHTML = `You have ordered the Pizza with 2 veggie Nugguts!!! from ${restObj.name}`
+        }
+    }
+})();

@@ -9,6 +9,7 @@
         <meta charset="UTF-8">
         <meta name="description" content="Meal ordering page">
         <meta name="keywords" content="Meal, Restaurants and searchBox">
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     </head>
     <body>
         <header class="header_wrapper">
@@ -20,22 +21,7 @@
             <div class="header_img_holder"><img alt="happyfeastLogo" class="feast_logo" src="../images/general/happyfeastlogod.webp"></div>
         </header>
         <aside class="navigations">
-            <ul>
-                <li><a href="../../HomePage/HomePage.html">Home</a></li>
-                <li><a href="../../HomePage/HomePage.html">AboutUs</a></li>
-                <li><a href="./mealOrder.html">MealOrder</a></li>
-                <li><a href="./searchOrder.html">Search Order</a></li>
-                <li><a href="./orderTracking.html">Order tracking</a></li>
-                <li><a href="../../HomePage/HomePage.html">ContactUs</a></li>
-                <li><a href="../../Feedback/feedback.html">Feedback</a></li>
-                <li><a href="../../Review/review.html">Review and rating</a></li>
-                <li><a href="../../HomePage/HomePage.html">Discount</a></li>
-                <li><a href="../../HomePage/HomePage.html">Tour</a></li>
-                <li><a href="../../HomePage/HomePage.html">Filter</a></li>
-                <li><a href="../../HomePage/HomePage.html">Game</a></li>
-                <li><a href="../../Membership/membership.html">Membership</a></li>
-                <li><a href="../../CareerPage/CareerPage.html">Career</a></li>
-            </ul>
+            <ul id="redirectionLinks"></ul>
         </aside>
         <main>
             <div class="order_tracking_container">
@@ -50,7 +36,7 @@
                     <span class="fo_deliver_txt">Order Delivered</span>
                 </div>
                 <div class="OrderDesc">
-                    <p>You have ordered the Pizza with 2 veggie Nugguts !!!!</p>
+                    <p>You have ordered the Pizza with 2 veggie Nugguts!!!</p>
                 </div>
             </div>
             <div class="order_details">
@@ -84,5 +70,6 @@
             </div>
         </footer>
         <script src="../js/order.js"></script>
+        <script src="../js/mealDisplay.js"></script>
     </body>
 </html>

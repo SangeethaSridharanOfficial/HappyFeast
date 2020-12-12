@@ -1,5 +1,5 @@
 {
-    "mealLInk": [
+    "pageLink": [
         {
             "name": "Home",
             "link": "../../HomePage/HomePage.html"
@@ -56,5 +56,73 @@
             "name": "Career",
             "link": "../../CareerPage/CareerPage.html"
         }
+    ],
+
+    "mealLink": [
+        {
+            "name": "Alo",
+            "restSrc": "../images/restaurants/alo.jpg",
+            "desc": "Fast food, tasty and reliable",
+            "cost": "$200 - $500",
+            "payMethod": "Cash and Online Payments",
+            "searchTerm": "alo"
+        },
+        {
+            "name": "DarkMoody Restaurants",
+            "restSrc": "../images/restaurants/darkMoody.jpg",
+            "desc": "Fast food, tasty and reliable",
+            "cost": "$100 - $300",
+            "payMethod": "Cash and Online Payments",
+            "searchTerm": "darkMoody"
+        },
+        {
+            "name": "MumbaiLuxury Restaurants",
+            "restSrc": "../images/restaurants/mumbaiLuxury.jpg",
+            "desc": "Fast food, tasty and reliable",
+            "cost": "$100 - $500",
+            "payMethod": "Cash and Online Payments",
+            "searchTerm": "mumbaiLuxury"
+        },
+        {
+            "name": "Olive Restaurants",
+            "restSrc": "../images/restaurants/olive.jpg",
+            "desc": "Fast food, tasty and reliable",
+            "cost": "$200 - $300",
+            "payMethod": "Cash and Online Payments",
+            "searchTerm": "olive"
+        },
+        {
+            "name": "PandemicLeaves Restaurants",
+            "restSrc": "../images/restaurants/pandemicLeaves.jpg",
+            "desc": "Fast food, tasty and reliable",
+            "cost": "$200 - $500",
+            "payMethod": "Cash and Online Payments",
+            "searchTerm": "pandemicLeaves"
+        },
+        {
+            "name": "Raintree Restaurants",
+            "restSrc": "../images/restaurants/raintree.jpg",
+            "desc": "Fast food, tasty and reliable",
+            "cost": "$200 - $400",
+            "payMethod": "Cash and Online Payments",
+            "searchTerm": "raintree"
+        },
+        {
+            "name": "Rival Restaurants",
+            "restSrc": "../images/restaurants/rival.jpg",
+            "desc": "Fast food, tasty and reliable",
+            "cost": "$200 - $500",
+            "payMethod": "Cash and Online Payments",
+            "searchTerm": "rival"
+        },
+        {
+            "name": "Waterfall Restaurants",
+            "restSrc": "../images/restaurants/waterfall.jpg",
+            "desc": "Fast food, tasty and reliable",
+            "cost": "$100 - $400",
+            "payMethod": "Cash and Online Payments",
+            "searchTerm": "waterfall"
+        }
+
     ]
 }
