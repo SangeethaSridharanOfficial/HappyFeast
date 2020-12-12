@@ -24,19 +24,25 @@ main {
       color: red;
 }
 
-#pFormat{
-    padding-top: 10px;
+.pFormat{
+    
     text-align: center;
     color:maroon;
     font-weight: bold;
     font-size: 120%;
+   
+    
+}
+
+.centerAlign{
+    text-align: center;
+   margin-top:-3%;
 }
 
 form img{
-    height:30px;
-    width:30px;
-    padding-top:20px;
-}
+    height:20px;
+    width:20px;
+   }
 
 /* Display for screen larger than Portrait Phones*/
 
