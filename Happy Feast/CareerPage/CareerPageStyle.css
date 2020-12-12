@@ -6,7 +6,7 @@ main {
   right: 0;
   left: 10px;
 }
-body{
+body {
   font-family: "Lato", sans-serif;
 }
 .info a {
@@ -17,13 +17,13 @@ body{
   color: black;
   font-style: italic;
 }
-a:hover{
+a:hover {
   text-decoration: underline;
 }
-nav{
-  width: 14%;
+nav {
+  width: 30%;
 }
-.info{
+.info {
   left: 20%;
   position: absolute;
 }
@@ -37,7 +37,6 @@ nav{
   left: 0;
   background-color: #111;
   overflow-x: hidden;
-  
 }
 
 .sidenav a {
@@ -51,10 +50,57 @@ nav{
 .sidenav a:hover {
   color: #f1f1f1;
 }
-
-
-
+.sidenav .logout {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+.sidenav .logout:hover {
+  color: #f1f1f1;
+  cursor: pointer;
+}
 @media only screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;height: 93.5%}
-  .sidenav a {font-size: 18px;}
+  .sidenav {
+    padding-top: 15px;
+    height: 93.5%;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+#confrmdiv {
+  display: none;
+  background-color: rgb(230, 152, 36);
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  position: fixed;
+  width: 300px;
+  left: 50%;
+  margin-left: -150px;
+  padding: 6px 8px 8px;
+  box-sizing: border-box;
+  text-align: center;
+}
+#confrmdiv button {
+  background-color: #ccc;
+  display: inline-block;
+  border-radius: 3px;
+  border: 1px solid #aaa;
+  padding: 2px;
+  text-align: center;
+  width: 80px;
+  cursor: pointer;
+}
+#confrmdiv .button:hover {
+  background-color: #ddd;
+}
+#confirmBox .message {
+  text-align: left;
+  margin-bottom: 8px;
+}
+.confirmation-box {
+  position: relative;
+  top: 300px;
 }

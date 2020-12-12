@@ -36,6 +36,25 @@
           location.href = "../discountcalculator/index.html";
         }
       };
+      const onLogoutClick = () => {
+        //display confirmation pop up
+        document.getElementById("confrmdiv").style.display = "block";
+        //disable clicking on other components while the pop up is displayed
+        document.getElementById("select-options").style.pointerEvents = "none";
+        //redirect to logout page on click of ok in the confirmation pop up
+        document.getElementById("truebtn").onclick = function () {
+          location.href = "../Logout/Logout.html";
+        };
+        //hiding the confirmation pop up when no is clicked
+        document.getElementById("falsebtn").onclick = function () {
+          document.getElementById("confrmdiv").style.display = "none";
+          document.getElementById("select-options").style.pointerEvents = "";
+        };
+      };
+       //Route to home page on click of happy feast icon
+       const navigateToHome=()=>{
+        location.href="../HomePage/HomePage.html"
+      }
     </script>
   </head>
 
@@ -45,6 +64,7 @@
         alt="happyfeastLogo"
         class="feast_logo"
         src="../Common/Images/happyfeastlogod.webp"
+        onclick="navigateToHome()"
       />
       <h1 class="ofo_txt">Home</h1>
       <div class="search_holder">
@@ -54,7 +74,7 @@
     </header>
     <main>
       <h1 id="welcome"></h1>
-      <div class="select-options">
+      <div class="select-options" id="select-options">
         <!-- order meals feature -->
         <div class="orderfood" onclick="redirect('ordermeals')">
           <img class="foodimage" alt="food image" src="./Images/burger.gif" />
@@ -79,7 +99,6 @@
             <h2>
               Take a tour of our page and know how to access all the features
             </h2>
-            o
           </div>
         </div>
         <!-- track your order component -->
@@ -111,11 +130,23 @@
             <a href="../Feedback/feedback.html">Feed Back</a>
             <a href="../AboutUs/pages/AboutUs.html">About us</a>
             <a href="../ContactUs/pages/ContactUs.html">Contact us</a>
-            <a href="../Logout/Logout.html">Log out</a>
+            <div id="logout" class="logout" onclick="onLogoutClick()">
+              Log out
+            </div>
           </div>
         </nav>
       </div>
     </main>
+    <!-- confirmation dialog box for log out -->
+    <div class="confirmation-box">
+      <div id="confrmdiv">
+        Do you want to log off from the Happy Feast
+        <br />
+        <br /><br />
+        <button id="truebtn">Yes</button>
+        <button id="falsebtn">No</button>
+      </div>
+    </div>
     <footer>
       <span class="copyright_text">Copyright &copy; 2020 HappyFeast</span>
       <div class="social_site_icons">

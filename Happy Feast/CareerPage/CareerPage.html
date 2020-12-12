@@ -12,6 +12,47 @@
       content="Restaurants, Food,food industry,restaurant,career"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+      //make axios call to get data of the career links
+      async function makeRequest() {
+        const configuration = {
+          method: "get",
+          url: "careerLinks.json",
+        };
+        let response = await axios(configuration);
+        console.log("data", response.data);
+        let careerLinks = document.getElementById("career-list");
+        links = "";
+        response.data.careerLinks.forEach((obj) => {
+          links += `<a href="${obj.link}" target="_blank" >${obj.name}</a>`;
+        });
+        careerLinks.innerHTML = links;
+      }
+      //call function on page load to get career links
+      window.onload = function () {
+        makeRequest();
+      };
+      const onLogoutClick = () => {
+        //display confirmation pop up
+        document.getElementById("confrmdiv").style.display = "block";
+        //disable clicking on other components while the pop up is displayed
+        document.getElementById("main").style.pointerEvents = "none";
+        //redirect to logout page on click of ok in the confirmation pop up
+        document.getElementById("truebtn").onclick = function () {
+          location.href = "../Logout/Logout.html";
+        };
+        //hiding the confirmation pop up when no is clicked
+        document.getElementById("falsebtn").onclick = function () {
+          document.getElementById("confrmdiv").style.display = "none";
+          document.getElementById("main").style.pointerEvents = "";
+        };
+      };
+       //Route to home page on click of happy feast icon
+       const navigateToHome=()=>{
+        location.href="../HomePage/HomePage.html"
+      }
+    </script>
   </head>
   <body>
     <header class="header_wrapper">
@@ -19,6 +60,7 @@
         alt="happyfeastLogo"
         class="feast_logo"
         src="../Common/Images/happyfeastlogod.webp"
+        onclick="navigateToHome()"
       />
       <h1 class="ofo_txt">Career Opportunities</h1>
       <div class="search_holder">
@@ -26,7 +68,7 @@
         <input type="text" placeholder="Search for restaurant..." />
       </div>
     </header>
-    <main>
+    <main id="main">
       <div class="info">
         <h3>Career Posibilities in the food industry</h3>
         <p>
@@ -41,46 +83,10 @@
           Please click on the following links to explore various new fields.
         </p>
         <!-- navigate to different pages for info on career paths -->
+
         <nav>
-          <a
-            href="https://en.wikipedia.org/wiki/Craft_brewery_and_microbrewery"
-            target="_blank"
-            >Craft Brewer</a
-          >
-          <a
-            href="http://www.wafarmersmarkettoolkit.org/chapter-4/managers/#:~:text=The%20Market%20Manager%20is%20a,opportunities%2C%20and%20market%20managers%20compensation."
-            target="_blank"
-            >Farmers' Market Manager</a
-          >
-          <a
-            href="https://www.food-lawyers.net/#:~:text=Food%20lawyers%20offer%20more%20than,cooperation%20with%20the%20food%20sector."
-            target="_blank"
-            >Food Lawyer</a
-          >
-          <a
-            href="https://www.theartcareerproject.com/careers/food-styling/"
-            target="_blank"
-            >Food Stylist</a
-          >
-          <a
-            href="https://en.wikipedia.org/wiki/Health_coaching"
-            target="_blank"
-            >Holistic Health Coach</a
-          >
-          <a
-            href="https://en.wikipedia.org/wiki/Molecular_gastronomy"
-            target="_blank"
-            >Molecular Gastronomist</a
-          >
-          <a
-            href="https://en.wikipedia.org/wiki/Mycology#:~:text=Mycology%20is%20the%20branch%20of,such%20as%20toxicity%20or%20infection."
-            target="_blank"
-            >Mycologist</a
-          >
-          <a href="https://www.sprinteriors.com/" target="_blank"
-            >Restaurant Designer</a
-          >
-          <a href="https://www.vegan.com/chefs/" target="_blank">Vegan Chef</a>
+          <!-- display career links -->
+          <div id="career-list"></div>
         </nav>
         <h3>Apply to posts in our restaurant</h3>
         <p>
@@ -101,10 +107,22 @@
           <a href="../Feedback/feedback.html">Feed Back</a>
           <a href="../AboutUs/pages/AboutUs.html">About us</a>
           <a href="../ContactUs/pages/ContactUs.html">Contact us</a>
-          <a href="../Logout/Logout.html">Log out</a>
+          <div id="logout" class="logout" onclick="onLogoutClick()">
+            Log out
+          </div>
         </div>
       </nav>
     </main>
+    <!-- confirmation dialog box for log out -->
+    <div class="confirmation-box">
+      <div id="confrmdiv">
+        Do you want to log off from the Happy Feast
+        <br />
+        <br /><br />
+        <button id="truebtn">Yes</button>
+        <button id="falsebtn">No</button>
+      </div>
+    </div>
     <footer>
       <span class="copyright_text">Copyright &copy; 2020 HappyFeast</span>
       <div class="social_site_icons">
