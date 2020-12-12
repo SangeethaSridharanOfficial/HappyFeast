@@ -131,7 +131,17 @@ nav {
 .sidenav a:hover {
   color: #f1f1f1;
 }
-
+.sidenav .logout {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+.sidenav .logout:hover {
+  color: #f1f1f1;
+  cursor: pointer;
+}
 @media only screen and (max-height: 450px) {
   .sidenav {
     padding-top: 15px;
@@ -140,4 +150,38 @@ nav {
   .sidenav a {
     font-size: 18px;
   }
+}
+#confrmdiv {
+  display: none;
+  background-color: rgb(230, 152, 36);
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  position: fixed;
+  width: 300px;
+  left: 50%;
+  margin-left: -150px;
+  padding: 6px 8px 8px;
+  box-sizing: border-box;
+  text-align: center;
+}
+#confrmdiv button {
+  background-color: #ccc;
+  display: inline-block;
+  border-radius: 3px;
+  border: 1px solid #aaa;
+  padding: 2px;
+  text-align: center;
+  width: 80px;
+  cursor: pointer;
+}
+#confrmdiv .button:hover {
+  background-color: #ddd;
+}
+#confirmBox .message {
+  text-align: left;
+  margin-bottom: 8px;
+}
+.confirmation-box {
+  position: relative;
+  top: 300px;
 }

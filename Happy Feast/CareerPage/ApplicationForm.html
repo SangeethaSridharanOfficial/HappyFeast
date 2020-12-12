@@ -5,11 +5,54 @@
     <link rel="stylesheet" href="ApplicationForm.css" />
     <link rel="stylesheet" href="../Common/HeaderFooterStyle.css" />
     <script>
-      //alert on application submit
+      //function for application submission
       const submitApplication = () => {
         alert("Thanks for applying we will get back ");
         location.href = "../HomePage/HomePage.html";
       };
+      window.onload = function () {
+        document.querySelector("#submit-application").onclick = validateForm;
+      };
+      //validations of the fields in the application
+      const validateForm = () => {
+        let firstName = document.getElementById("fname");
+        let lastName = document.getElementById("lname");
+        let namePattern = /^[a-zA-Z]{2,20}$/;
+        let emailPattern = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+        if (firstName.value == "") {
+          document.getElementById("name-error").innerHTML =
+            "Please enter first name";
+        } else if (!namePattern.test(firstName.value)) {
+          document.getElementById("name-error").innerHTML =
+            "Please enter a valid first name ";
+        } else if (document.getElementById("email").value == "") {
+          document.getElementById("email-error").innerHTML =
+            "Please enter a email Id";
+        } else if (!emailPattern.test(document.getElementById("email").value)) {
+          document.getElementById("email-error").innerHTML =
+            "Please enter a valid email Id";
+        } else if (document.getElementById("date-picker").value == "") {
+          document.getElementById("date-error").innerHTML =
+            "Please enter available start date";
+        } else {
+          alert("Thanks for submitting we will get back to you");
+          location.href = "../HomePage/HomePage.html";
+        }
+      };
+      //clear in line error message when user enters new data
+      const clearNameInlineError = () => {
+        document.getElementById("name-error").innerHTML = "";
+      };
+      const clearEmailInlineError = () => {
+        document.getElementById("email-error").innerHTML = "";
+      };
+      const clearDateInlineError = () => {
+        document.getElementById("date-error").innerHTML = "";
+      };
+      //Route to home page on click of happy feast icon
+      const navigateToHome=()=>{
+        location.href="../HomePage/HomePage.html"
+      }
     </script>
   </head>
   <body>
@@ -18,6 +61,7 @@
         alt="happyfeastLogo"
         class="feast_logo"
         src="../Common/Images/happyfeastlogod.webp"
+        onclick="navigateToHome()"
       />
       <h1 class="ofo_txt">Job Application</h1>
       <div class="search_holder">
@@ -35,26 +79,39 @@
         <div class="item">
           <p>Name<span class="required">*</span></p>
           <div class="name-item">
-            <input type="text" name="name" placeholder="First" required />
-            <input type="text" name="name" placeholder="Last" required />
+            <input
+              id="fname"
+              type="text"
+              name="name"
+              placeholder="First"
+              oninput="clearNameInlineError()"
+            />
+            <input id="lname" type="text" name="name" placeholder="Last" />
           </div>
+          <div class="inline-error" id="name-error"></div>
         </div>
         <div class="contact-item">
           <div class="item">
             <p>Email<span class="required">*</span></p>
-            <input type="text" name="name" required />
+            <input
+              id="email"
+              type="text"
+              name="name"
+              oninput="clearEmailInlineError()"
+            />
           </div>
           <div class="item">
-            <p>Phone<span class="required">*</span></p>
-            <input type="text" name="name" required />
+            <p>Phone<span class="required"></span></p>
+            <input id="phone" type="text" name="name" />
           </div>
         </div>
+        <div class="inline-error" id="email-error"></div>
         <div class="position-item">
           <div class="item">
             <p>
               What position are you applying for?<span class="required">*</span>
             </p>
-            <select required>
+            <select >
               <option value="1">Kitchen Manager</option>
               <option value="2">Chef Assistant</option>
               <option value="3">Bartender</option>
@@ -64,15 +121,21 @@
           </div>
           <div class="item">
             <p>Available start date<span class="required">*</span></p>
-            <input type="date" name="bdate" required />
+            <input
+              type="date"
+              name="bdate"
+              id="date-picker"
+              oninput="clearDateInlineError()"
+            />
             <i class="fas fa-calendar-alt"></i>
           </div>
+          <div class="inline-error" id="date-error"></div>
         </div>
         <div class="question">
           <p>
-            What is your current employment status?<span class="required"
-              >*</span
-            >
+            What is your current employment status?<span
+              class="required"
+            ></span>
           </p>
           <div class="question-answer">
             <div>
@@ -138,7 +201,7 @@
           </div>
         </div>
         <div class="btn-block">
-          <button type="submit" onclick="submitApplication()">
+          <button type="submit" id="submit-application">
             Apply For The Job
           </button>
         </div>
