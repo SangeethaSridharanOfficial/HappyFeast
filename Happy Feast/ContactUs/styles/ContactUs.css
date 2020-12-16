@@ -48,11 +48,7 @@ form img{
 
 @media only screen and (min-width: 768px) {
      
-/*main {
-    margin-top:20%;
-
-}*/
-        
+       
 .search_holder input{
     top: 5px;
     left: 10px;
@@ -128,15 +124,14 @@ form textarea{
 @media only screen and (max-width: 767px) {
       
 main {
+    margin:0 auto;
     margin-top:20%;
-    margin-left: 10%;
-    margin-right: auto;
-    min-width: 470px;
     height:auto;
 }
     
 form { 
     width: 75%;  
+    margin:0 auto;
         
 }
 .search_holder input{
@@ -164,6 +159,7 @@ h2{
    text-align: center;
    font-size: 200%;
    width: 87%;
+   margin-left: 2%;
 }
     
 }

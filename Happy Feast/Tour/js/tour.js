@@ -17,17 +17,18 @@ let paragraph=["<p>The <b> Home Page </b>provides a Welcoming Interface to Happy
 "<p>The <b>Career Page </b> advertise all vacancies within the organization </p>"
 ];
 
-let image=["<img src=../images/tour/homePic.jpg>","<img src=../images/tour/aboutPic.jpg>",
-"<img src=../images/tour/orderPic.jpg>","<img src=../images/tour/trackPic.jpg>",
-"<img src=../images/tour/contactPic.jpg>","<img src=../images/tour/Feedback.jpg>",
-"<img src=../images/tour/Review.jpg>","<img src=../images/tour/discountPic.jpg>",
-"<img src=../images/tour/tourPic.jpg>","<img src=../images/tour/filterPic.jpg>",
-"<img src=../images/tour/gamePic.jpg>","<img src=../images/tour/Membership.jpg>",
-"<img src=../images/tour/CareerPic.jpg>"];
+let image=['<img alt="Home Pic" src="../images/tour/homePic.JPG">','<img alt="About Us Pic" src="../images/tour/aboutPic.JPG"/>',
+'<img alt="Order Pic" src="../images/tour/orderPic.JPG"/>','<img alt="Track Pic" src="../images/tour/trackPic.JPG"/>',
+'<img alt="contact Pic" src="../images/tour/contactPic.JPG"/>','<img alt="Feedback Pic" src="../images/tour/Feedback.JPG"/>',
+'<img alt="contact Pic" src="../images/tour/Review.JPG"/>','<img alt="discount Pic" src="../images/tour/discountPic.JPG"/>',
+'<img alt="Tour Pic" src="../images/tour/tourPic.JPG"/>','<img alt="contact Pic" src="../images/tour/filterPic.JPG"/>',
+'<img alt="contact Pic" src="../images/tour/gamePic.JPG"/>','<img alt="contact Pic" src="../images/tour/Membership.JPG"/>',
+'<<img alt="contact Pic" src="../images/tour/CareerPic.JPG"/>'];
 
 /////////////display informtion and image/////////////////////////////////////////////////////////////////
 function showText(i){
-    document.getElementById("display").innerHTML="<div class=disformat>"+paragraph[i]+image[i]+"</div>";
+    document.getElementById('display').innerHTML='<div class=disformat>'+paragraph[i]+image[i]+'</div>';
+  
 }
 
 //////////////reset information//////////////////////////////////////////////////////////////////////////
