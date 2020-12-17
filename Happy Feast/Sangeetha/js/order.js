@@ -63,7 +63,7 @@ let handleSearch = (e) => {
         const listOfRest = ['alo', 'darkMoody', 'mumbaiLuxury', 'olive', 'pandemicLeaves', 'raintree', 'rival', 'waterfall'];
         
         listOfRest.forEach(val => {
-            if((target.value.includes(val) || val === target.value.toLowerCase()) && document.querySelector(`.res_holder.${val}`)){
+            if((target.value.includes(val) || val.toLowerCase() === target.value.toLowerCase()) && document.querySelector(`.res_holder.${val}`)){
                 document.querySelectorAll('.res_holder').forEach(ele => {
                     if(!ele.classList.contains(val)){
                         ele.style.display = 'none';
